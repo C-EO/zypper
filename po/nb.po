@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: zypper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-02 13:50+0200\n"
-"PO-Revision-Date: 2025-07-22 12:48+0000\n"
-"Last-Translator: Julia Faltenbacher <julia.faltenbacher@suse.com>\n"
+"PO-Revision-Date: 2026-02-08 15:04+0000\n"
+"Last-Translator: Terje Berg-Hansen <terje@itfakultetet.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.opensuse.org/projects/zypper/"
 "master/nb_NO/>\n"
 "Language: nb\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: src/Command.cc:93
 msgid "Invalid command"
@@ -177,13 +177,13 @@ msgstr ""
 #. translators: --no-abbrev, -A
 #: src/Config.cc:325
 msgid "Do not abbreviate text in tables."
-msgstr ""
+msgstr "Ikke forkort tekst i tabeller."
 
 #. translators: --table-style, -s, %1% denotes the supported range of the integer argument (e.g. "1-11")
 #: src/Config.cc:330
 #, boost-format
 msgid "Table style (%1%)."
-msgstr ""
+msgstr "Tabellstil (%1%)."
 
 #: src/Config.cc:334 src/commands/optionsets.cc:284
 msgid "Entering non-interactive mode."
@@ -192,7 +192,7 @@ msgstr "Starter ikke-interaktiv modus."
 #. translators: --non-interactive, -n
 #: src/Config.cc:338
 msgid "Do not ask anything, use default answers automatically."
-msgstr ""
+msgstr "Ikke still spørsmål, bruk automatiske standardsvar."
 
 #: src/Config.cc:343
 msgid ""
