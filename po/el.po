@@ -16,19 +16,19 @@ msgstr ""
 "Project-Id-Version: zypper.el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-23 11:16+0100\n"
-"PO-Revision-Date: 2025-07-22 12:47+0000\n"
-"Last-Translator: Julia Faltenbacher <julia.faltenbacher@suse.com>\n"
+"PO-Revision-Date: 2026-02-24 02:04+0000\n"
+"Last-Translator: Efstathios Iosifidis <eiosifidis@yandex.com>\n"
 "Language-Team: Greek <https://l10n.opensuse.org/projects/zypper/master/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.16\n"
 
 #: src/Command.cc:93
 msgid "Invalid command"
-msgstr ""
+msgstr "Μη έγκυρη εντολή"
 
 #: src/Command.cc:111
 msgid "Repository Management:"
@@ -56,7 +56,7 @@ msgstr "Κλειδώματα Πακέτων:"
 
 #: src/Command.cc:155
 msgid "Locale Management:"
-msgstr ""
+msgstr "Διαχείριση Τοπικών Ρυθμίσεων:"
 
 #: src/Command.cc:159
 msgid "Other Commands:"
@@ -64,7 +64,7 @@ msgstr "Άλλες Εντολές:"
 
 #: src/Command.cc:169
 msgid "Subcommands:"
-msgstr ""
+msgstr "Υποεντολές:"
 
 #: src/Command.cc:290
 #, c-format, boost-format
@@ -73,40 +73,42 @@ msgstr "Άγνωστη εντολή '%s'"
 
 #: src/CommitSummary.cc:91
 msgid "Installation has completed with error."
-msgstr ""
+msgstr "Η εγκατάσταση ολοκληρώθηκε με σφάλμα."
 
 #: src/CommitSummary.cc:93
 #, boost-format
 msgid "You may run '%1%' to repair any dependency problems."
 msgstr ""
+"Μπορείτε να εκτελέσετε το '%1%' για να επιδιορθώσετε τυχόν προβλήματα "
+"εξαρτήσεων."
 
 #: src/CommitSummary.cc:127
 #, c-format, boost-format
 msgid "The following package failed to install:"
 msgid_plural "The following %d packages failed to install:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Το ακόλουθο πακέτο απέτυχε να εγκατασταθεί:"
+msgstr[1] "Τα ακόλουθα %d πακέτα απέτυχαν να εγκατασταθούν:"
 
 #: src/CommitSummary.cc:143
 #, c-format, boost-format
 msgid "The following package installation was skipped:"
 msgid_plural "The following %d package installations were skipped:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Η εγκατάσταση του ακόλουθου πακέτου παραλείφθηκε:"
+msgstr[1] "Οι εγκαταστάσεις των ακόλουθων %d πακέτων παραλείφθηκαν:"
 
 #: src/CommitSummary.cc:159
 #, c-format, boost-format
 msgid "The following package failed to uninstall:"
 msgid_plural "The following %d packages failed to uninstall:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Το ακόλουθο πακέτο απέτυχε να απεγκατασταθεί:"
+msgstr[1] "Τα ακόλουθα %d πακέτα απέτυχαν να απεγκατασταθούν:"
 
 #: src/CommitSummary.cc:175
 #, c-format, boost-format
 msgid "The following package removal was skipped:"
 msgid_plural "The following %d package removal were skipped:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Η αφαίρεση του ακόλουθου πακέτου παραλείφθηκε:"
+msgstr[1] "Οι αφαιρέσεις των ακόλουθων %d πακέτων παραλείφθηκαν:"
 
 #. translators: Appended when clipping a long enumeration:
 #. "ConsoleKit-devel ConsoleKit-doc ... and 20828 more items."
@@ -115,8 +117,8 @@ msgstr[1] ""
 #, boost-format
 msgid "... and %1% more item."
 msgid_plural "... and %1% more items."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "... και %1% ακόμα στοιχείο."
+msgstr[1] "... και %1% ακόμα στοιχεία."
 
 #: src/Config.cc:53
 #, c-format, boost-format
@@ -126,7 +128,7 @@ msgstr "Μη έγκυρο στυλ πίνακα %d."
 #: src/Config.cc:54
 #, c-format, boost-format
 msgid " Use an integer number from %d to %d"
-msgstr ""
+msgstr " Χρησιμοποιήστε έναν ακέραιο αριθμό από %d έως %d"
 
 #: src/Config.cc:172
 msgid "The path specified in the --root option must be absolute."
@@ -191,9 +193,9 @@ msgstr "Να μην γίνονται συντομογραφίες σε κείμ�
 
 #. translators: --table-style, -s, %1% denotes the supported range of the integer argument (e.g. "1-11")
 #: src/Config.cc:330
-#, fuzzy, boost-format
+#, boost-format
 msgid "Table style (%1%)."
-msgstr "Στυλ πίνακα (ακέραιου)."
+msgstr "Στυλ πίνακα (%1%)."
 
 #: src/Config.cc:334 src/commands/optionsets.cc:284
 msgid "Entering non-interactive mode."
@@ -237,6 +239,8 @@ msgstr "Αγνόηση άγνωστων πακέτων."
 msgid ""
 "Terse output for machine consumption. Implies --no-abbrev and --no-color."
 msgstr ""
+"Συνοπτική έξοδο για ανάγνωση από μηχανήματα. Συνεπάγεται τα --no-abbrev "
+"και --no-color."
 
 #. translators: --reposd-dir, -D <DIR>
 #: src/Config.cc:397
@@ -267,7 +271,7 @@ msgstr "Χρήση εναλλακτικού καταλόγου λανθάνου�
 
 #: src/Config.cc:458
 msgid "Repository Options"
-msgstr ""
+msgstr "Επιλογές Αποθετηρίου"
 
 #: src/Config.cc:462
 msgid "Entering 'no-gpg-checks' mode."
@@ -276,7 +280,7 @@ msgstr "Εισαγωγή σε κατάσταση 'no-gpg-checks'."
 #. translators: --no-gpg-checks
 #: src/Config.cc:466
 msgid "Ignore GPG check failures and continue."
-msgstr ""
+msgstr "Αγνόηση αποτυχιών ελέγχου GPG και συνέχεια."
 
 #: src/Config.cc:471
 #, c-format, boost-format
@@ -289,12 +293,12 @@ msgstr ""
 #. translators: --gpg-auto-import-keys
 #: src/Config.cc:477
 msgid "Automatically trust and import new repository signing keys."
-msgstr ""
+msgstr "Αυτόματη εμπιστοσύνη και εισαγωγή νέων κλειδιών υπογραφής αποθετηρίου."
 
 #. translators: --plus-repo, -p <URI>
 #: src/Config.cc:481
 msgid "Use an additional repository."
-msgstr ""
+msgstr "Χρήση ενός επιπλέον αποθετηρίου."
 
 #. translators: --plus-content <TAG>
 #: src/Config.cc:485
@@ -302,6 +306,9 @@ msgid ""
 "Additionally use disabled repositories providing a specific keyword. Try '--"
 "plus-content debug' to enable repos indicating to provide debug packages."
 msgstr ""
+"Επιπλέον χρήση απενεργοποιημένων αποθετηρίων που παρέχουν μια συγκεκριμένη "
+"λέξη-κλειδί. Δοκιμάστε '--plus-content debug' για να ενεργοποιήσετε "
+"αποθετήρια που παρέχουν πακέτα αποσφαλμάτωσης."
 
 #: src/Config.cc:491
 msgid "Repositories disabled, using the database of installed packages only."
@@ -312,7 +319,7 @@ msgstr ""
 #. translators: --disable-repositories
 #: src/Config.cc:495
 msgid "Do not read meta-data from repositories."
-msgstr ""
+msgstr "Να μην αναγνωσθούν μεταδεδομένα από τα αποθετήρια."
 
 #: src/Config.cc:499
 msgid "Autorefresh disabled."
@@ -321,7 +328,7 @@ msgstr "Η αυτόματη ανανέωση είναι απενεργοποιη
 #. translators: --no-refresh
 #: src/Config.cc:503
 msgid "Do not refresh the repositories."
-msgstr ""
+msgstr "Να μην ανανεωθούν τα αποθετήρια."
 
 #: src/Config.cc:507
 msgid "CD/DVD repositories disabled."
@@ -330,7 +337,7 @@ msgstr "Τα αποθετήρια CD/DVD έχουν απενεργοποιηθε
 #. translators: --no-cd
 #: src/Config.cc:511
 msgid "Ignore CD/DVD repositories."
-msgstr ""
+msgstr "Αγνόηση αποθετηρίων CD/DVD."
 
 #: src/Config.cc:515
 msgid "Remote repositories disabled."
@@ -339,7 +346,7 @@ msgstr "Τα απομακρυσμένα αποθετήρια έχουν απεν
 #. translators: --no-remote
 #: src/Config.cc:519
 msgid "Ignore remote repositories."
-msgstr ""
+msgstr "Αγνόηση απομακρυσμένων αποθετηρίων."
 
 #. translators: --releasever
 #: src/Config.cc:526
@@ -347,6 +354,8 @@ msgid ""
 "Set the value of $releasever in all .repo files (default: distribution "
 "version)"
 msgstr ""
+"Ορισμός της τιμής του $releasever σε όλα τα αρχεία .repo (προεπιλογή: έκδοση "
+"διανομής)"
 
 #: src/Config.cc:530
 msgid "Target Options"
@@ -362,6 +371,8 @@ msgstr "Λειτουργία σε διαφορετικό κατάλογο root."
 msgid ""
 "Operate on a different root directory, but share repositories with the host."
 msgstr ""
+"Λειτουργία σε διαφορετικό ριζικό κατάλογο, αλλά με κοινή χρήση των "
+"αποθετηρίων του κεντρικού συστήματος."
 
 #: src/Config.cc:547
 msgid "Ignoring installed resolvables."
@@ -374,28 +385,32 @@ msgstr "Να μην αναγνωσθούν τα εγκατεστημένα πα�
 
 #: src/Config.cc:717
 msgid "No config file is in use. Can not save options."
-msgstr ""
+msgstr "Δεν χρησιμοποιείται αρχείο ρυθμίσεων. Αδυναμία αποθήκευσης επιλογών."
 
 #: src/Config.cc:728
 #, boost-format
 msgid "Option '%1%' saved in '%2%'."
-msgstr ""
+msgstr "Η επιλογή '%1%' αποθηκεύτηκε στο '%2%'."
 
 #: src/Config.cc:735
 msgid "Failed to save option."
-msgstr ""
+msgstr "Αποτυχία αποθήκευσης επιλογής."
 
 #: src/PackageArgs.cc:157
 #, c-format, boost-format
 msgid ""
 "'%s' install modifier must not be used without a package name or capability."
 msgstr ""
+"Ο τροποποιητής εγκατάστασης '%s' δεν πρέπει να χρησιμοποιείται χωρίς όνομα "
+"πακέτου ή δυνατότητα."
 
 #: src/PackageArgs.cc:167
 #, c-format, boost-format
 msgid ""
 "'%s' remove modifier must not be used without a package name or capability."
 msgstr ""
+"Ο τροποποιητής αφαίρεσης '%s' δεν πρέπει να χρησιμοποιείται χωρίς όνομα "
+"πακέτου ή δυνατότητα."
 
 #: src/PackageArgs.cc:219
 #, c-format, boost-format
@@ -537,6 +552,9 @@ msgid ""
 "There is an update candidate for '%s' from vendor '%s', while the current "
 "vendor is '%s'. Use '%s' to install this candidate."
 msgstr ""
+"Υπάρχει μια υποψήφια ενημέρωση για το '%s' από τον πάροχο '%s', ενώ ο τρέχων "
+"πάροχος είναι ο '%s'. Χρησιμοποιήστε '%s' για να εγκαταστήσετε αυτή την "
+"έκδοση."
 
 #: src/RequestFeedback.cc:133
 #, c-format, boost-format
@@ -592,13 +610,13 @@ msgid "Patch '%s' is not needed."
 msgstr "Η διόρθωση '%s' δε χρειάζεται."
 
 #: src/RequestFeedback.cc:182
-#, fuzzy, boost-format
+#, boost-format
 msgid ""
 "Patch '%1%' is optional. Use '%2%' to install it, or '%3%' to include all "
 "optional patches."
 msgstr ""
-"Η διόρθωση '%s' είναι κλειδωμένη. Χρησιμοποιήστε το '%s' για να το "
-"εγκαταστήσετε, ή ξεκλειδώστε το χρησιμοποιώντας το '%s'."
+"Η διόρθωση '%1%' είναι προαιρετική. Χρησιμοποιήστε '%2%' για να την "
+"εγκαταστήσετε, ή '%3%' για να συμπεριλάβετε όλες τις προαιρετικές διορθώσεις."
 
 #: src/RequestFeedback.cc:193
 #, c-format, boost-format
@@ -615,7 +633,7 @@ msgstr "Η διόρθωση '%s' δεν βρίσκεται στην συγκεκ
 #: src/RequestFeedback.cc:207
 #, c-format, boost-format
 msgid "Patch '%s' has not the specified severity."
-msgstr ""
+msgstr "Η διόρθωση '%s' δεν έχει την καθορισμένη κρισιμότητα."
 
 #: src/RequestFeedback.cc:214
 #, c-format, boost-format
@@ -656,22 +674,23 @@ msgstr "Προσθήκη σύγκρουσης: '%s'."
 #: src/RequestFeedback.cc:264
 #, boost-format
 msgid "Did you mean %1%?"
-msgstr ""
+msgstr "Μήπως εννοούσατε %1%;"
 
 #: src/SolverRequester.cc:487
 #, c-format, boost-format
 msgid "Ignoring option %s when updating the update stack first."
 msgstr ""
+"Παράβλεψη της επιλογής %s κατά την ενημέρωση της στοίβας ενημερώσεων πρώτα."
 
 #: src/SolverRequester.h:53
 #, boost-format
 msgid "Suspicious category filter value '%1%'."
-msgstr ""
+msgstr "Ύποπτη τιμή φίλτρου κατηγορίας '%1%'."
 
 #: src/SolverRequester.h:61
 #, boost-format
 msgid "Suspicious severity filter value '%1%'."
-msgstr ""
+msgstr "Ύποπτη τιμή φίλτρου κρισιμότητας '%1%'."
 
 #. translator: '%1%' is a products name
 #. '%2%' is a command to call (like 'zypper dup')
@@ -679,7 +698,7 @@ msgstr ""
 #: src/Summary.cc:556
 #, boost-format
 msgid "Product '%1%' requires to be upgraded by calling '%2%'!"
-msgstr ""
+msgstr "Το προϊόν '%1%' απαιτεί αναβάθμιση καλώντας το '%2%'!"
 
 #: src/Summary.cc:725
 #, c-format, boost-format
@@ -1099,12 +1118,15 @@ msgstr[0] "Η ακόλουθη εφαρμογή θα αλλάξει προμηθ
 msgstr[1] "Οι ακόλουθες εφαρμογές %d θα αλλάξουν προμηθευτή:"
 
 #: src/Summary.cc:1364
-#, fuzzy, c-format, boost-format
+#, boost-format, c-format
 msgid "The following package has no support information from its vendor:"
 msgid_plural ""
 "The following %d packages have no support information from their vendor:"
-msgstr[0] "Το ακόλουθο πακέτο δεν υποστηρίζεται από τον προμηθευτή του:"
-msgstr[1] "Τα ακόλουθα %d πακέτα δεν υποστηρίζονται από τον προμηθευτή τους:"
+msgstr[0] ""
+"Το ακόλουθο πακέτο δεν έχει πληροφορίες υποστήριξης από τον προμηθευτή του:"
+msgstr[1] ""
+"Τα ακόλουθα %d πακέτα δεν έχουν πληροφορίες υποστήριξης από τον προμηθευτή "
+"τους:"
 
 #: src/Summary.cc:1382
 #, c-format, boost-format
@@ -1128,7 +1150,7 @@ msgstr[1] ""
 
 #: src/Summary.cc:1417
 msgid "was superseded by"
-msgstr ""
+msgstr "αντικαταστάθηκε από"
 
 #: src/Summary.cc:1430
 #, c-format, boost-format
@@ -1139,7 +1161,11 @@ msgid_plural ""
 "The following %d packages were discontinued and have been superseded by a "
 "new packages with different names."
 msgstr[0] ""
+"Το ακόλουθο πακέτο καταργήθηκε και αντικαταστάθηκε από ένα νέο πακέτο με "
+"διαφορετικό όνομα."
 msgstr[1] ""
+"Τα ακόλουθα %d πακέτα καταργήθηκαν και αντικαταστάθηκαν από νέα πακέτα με "
+"διαφορετικά ονόματα."
 
 #: src/Summary.cc:1435
 msgid ""
@@ -1149,7 +1175,11 @@ msgid_plural ""
 "The successor packages should be installed as soon as possible to receive "
 "continued support:"
 msgstr[0] ""
+"Το διάδοχο πακέτο θα πρέπει να εγκατασταθεί το συντομότερο δυνατό για να "
+"συνεχιστεί η υποστήριξη:"
 msgstr[1] ""
+"Τα διάδοχα πακέτα θα πρέπει να εγκατασταθούν το συντομότερο δυνατό για να "
+"συνεχιστεί η υποστήριξη:"
 
 #: src/Summary.cc:1460
 #, c-format, boost-format
@@ -1200,24 +1230,26 @@ msgstr "Εγκατεστημένο"
 #, boost-format
 msgid "Run '%1%' to see the complete list of locked items."
 msgstr ""
+"Εκτελέστε '%1%' για να δείτε την πλήρη λίστα των κλειδωμένων αντικειμένων."
 
 #: src/Summary.cc:1537
 #, c-format, boost-format
 msgid "The following patch requires a system reboot:"
 msgid_plural "The following %d patches require a system reboot:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Η ακόλουθη διόρθωση απαιτεί επανεκκίνηση του συστήματος:"
+msgstr[1] "Οι ακόλουθες %d διορθώσεις απαιτούν επανεκκίνηση του συστήματος:"
 
 #: src/Summary.cc:1541
 #, c-format, boost-format
 msgid "The following package requires a system reboot:"
 msgid_plural "The following %d packages require a system reboot:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Το ακόλουθο πακέτο απαιτεί επανεκκίνηση του συστήματος:"
+msgstr[1] "Τα ακόλουθα %d πακέτα απαιτούν επανεκκίνηση του συστήματος:"
 
 #: src/Summary.cc:1563
 msgid "Skipped needed patches which do not apply without conflict:"
 msgstr ""
+"Παραλείφθηκαν απαραίτητες διορθώσεις που δεν εφαρμόζονται χωρίς συγκρούσεις:"
 
 #. Package download size:   99.2 MiB
 #. or
@@ -1226,17 +1258,17 @@ msgstr ""
 #. 99.2 MiB  |  -    6.4 MiB  already in cache
 #: src/Summary.cc:1588
 msgid "Package download size:"
-msgstr ""
+msgstr "Μέγεθος λήψης πακέτων:"
 
 #. translator: rendered as "105.7 MiB  overall download size"
 #: src/Summary.cc:1596
 msgid "overall package size"
-msgstr ""
+msgstr "συνολικό μέγεθος πακέτων"
 
 #. translator: rendered as "  6.4 MiB  already in cache"
 #: src/Summary.cc:1598
 msgid "already in cache"
-msgstr ""
+msgstr "ήδη στη λανθάνουσα μνήμη"
 
 #: src/Summary.cc:1605
 msgid "Download only."
@@ -1247,17 +1279,17 @@ msgstr "Μόνο λήψη."
 #. 1.9 MiB  |  -  347.3 MiB  released by packages that will be removed
 #: src/Summary.cc:1610
 msgid "Package install size change:"
-msgstr ""
+msgstr "Αλλαγή μεγέθους εγκατάστασης πακέτων:"
 
 #. translator: rendered as "349.1 MiB  required by packages that will be installed"
 #: src/Summary.cc:1615
 msgid "required by packages that will be installed"
-msgstr ""
+msgstr "απαιτείται από πακέτα που πρόκειται να εγκατασταθούν"
 
 #. translator: rendered as "347.3 MiB  released by packages that will be removed"
 #: src/Summary.cc:1617
 msgid "released by packages that will be removed"
-msgstr ""
+msgstr "αποδεσμεύεται από πακέτα που πρόκειται να αφαιρεθούν"
 
 #. translators: this text will be preceded by a number e.g. "5 packages to ..."
 #: src/Summary.cc:1638
@@ -1370,16 +1402,19 @@ msgid ""
 "Package manager restart required. (Run this command once again after the "
 "update stack got updated)"
 msgstr ""
+"Απαιτείται επανεκκίνηση του διαχειριστή πακέτων. (Εκτελέστε αυτήν την εντολή "
+"ξανά αφού ενημερωθεί η στοίβα ενημερώσεων)"
 
 #. translator: %1% is an option string like  "--dry-run"
 #: src/Summary.cc:1824
 #, boost-format
 msgid "%1% is set, otherwise a system reboot would be required."
 msgstr ""
+"Το %1% έχει οριστεί, διαφορετικά θα απαιτούνταν επανεκκίνηση του συστήματος."
 
 #: src/Summary.cc:1826
 msgid "System reboot required."
-msgstr ""
+msgstr "Απαιτείται επανεκκίνηση του συστήματος."
 
 #. translator: Printed after the summary but before the prompt to start the installation.
 #. Followed by some explanatory text telling it might be a good idea NOT to continue:
@@ -1391,7 +1426,7 @@ msgstr ""
 #. Continue? [y/n/...? shows all options] (y):
 #: src/Summary.cc:1845
 msgid "Consider to cancel:"
-msgstr ""
+msgstr "Εξετάστε το ενδεχόμενο ακύρωσης:"
 
 #: src/Zypper.cc:87
 msgid ""
@@ -1407,6 +1442,9 @@ msgid ""
 "We can ask PackageKit to interrupt the current action as soon as possible, "
 "but it depends on PackageKit how fast it will respond to this request."
 msgstr ""
+"Μπορούμε να ζητήσουμε από το PackageKit να διακόψει την τρέχουσα ενέργεια το "
+"συντομότερο δυνατό, αλλά εξαρτάται από το PackageKit το πόσο γρήγορα θα "
+"ανταποκριθεί σε αυτό το αίτημα."
 
 #: src/Zypper.cc:96
 msgid "Ask PackageKit to quit?"
@@ -1468,18 +1506,24 @@ msgid ""
 "the repository provider or check their web site. Many providers maintain a "
 "web page showing the fingerprints of the GPG keys they are using."
 msgstr ""
+"Ένα δημόσιο κλειδί GPG προσδιορίζεται σαφώς από το αποτύπωμά του. Μην "
+"βασίζεστε στο όνομα του κλειδιού. Εάν δεν είστε σίγουροι αν το εμφανιζόμενο "
+"κλειδί είναι αυθεντικό, ρωτήστε τον πάροχο του αποθετηρίου ή ελέγξτε την "
+"ιστοσελίδα του. Πολλοί πάροχοι διατηρούν μια ιστοσελίδα που δείχνει τα "
+"αποτυπώματα των κλειδιών GPG που χρησιμοποιούν."
 
 #: src/callbacks/keyring.h:38
-#, fuzzy
 msgid ""
 "Signing data enables the recipient to verify that no modifications occurred "
 "after the data were signed. Accepting data with no, wrong or unknown "
 "signature can lead to a corrupted system and in extreme cases even to a "
 "system compromise."
 msgstr ""
-"Αποδοχή πακέτων με λανθασμένο άθροισμα ελέγχου μπορεί να οδηγήσει σε "
-"αλλοιωμένο σύστημα και σε ακραίες περιπτώσεις ακόμα και στη διακινδύνευση "
-"του συστήματος."
+"Η υπογραφή δεδομένων επιτρέπει στον παραλήπτη να επαληθεύσει ότι δεν έγιναν "
+"τροποποιήσεις μετά την υπογραφή τους. Η αποδοχή δεδομένων με καθόλου, "
+"λανθασμένη ή άγνωστη υπογραφή μπορεί να οδηγήσει σε αλλοίωση του συστήματος "
+"και σε ακραίες περιπτώσεις ακόμα και στη διακινδύνευση της ασφάλειας του "
+"συστήματος."
 
 #. translator: %1% is a file name
 #: src/callbacks/keyring.h:46
@@ -1488,12 +1532,17 @@ msgid ""
 "File '%1%' is the repositories master index file. It ensures the integrity "
 "of the whole repo."
 msgstr ""
+"Το αρχείο '%1%' είναι το κύριο αρχείο ευρετηρίου του αποθετηρίου. "
+"Διασφαλίζει την ακεραιότητα ολόκληρου του αποθετηρίου."
 
 #: src/callbacks/keyring.h:52
 msgid ""
 "We can't verify that no one meddled with this file, so it might not be "
 "trustworthy anymore! You should not continue unless you know it's safe."
 msgstr ""
+"Δεν μπορούμε να επαληθεύσουμε ότι κανείς δεν παρενέβη σε αυτό το αρχείο, "
+"επομένως μπορεί να μην είναι πλέον έμπιστο! Δεν πρέπει να συνεχίσετε εκτός "
+"αν γνωρίζετε ότι είναι ασφαλές."
 
 #: src/callbacks/keyring.h:57
 msgid ""
@@ -1501,6 +1550,9 @@ msgid ""
 "malicious change, so it might not be trustworthy anymore! You should not "
 "continue unless you know it's safe."
 msgstr ""
+"Αυτό το αρχείο τροποποιήθηκε μετά την υπογραφή του. Αυτό μπορεί να οφείλεται "
+"σε κακόβουλη ενέργεια, επομένως το αρχείο μπορεί να μην είναι πλέον έμπιστο! "
+"Δεν πρέπει να συνεχίσετε εκτός αν γνωρίζετε ότι είναι ασφαλές."
 
 #: src/callbacks/keyring.h:59
 msgid ""
@@ -1510,6 +1562,13 @@ msgid ""
 "the signature verification might fail. After a few minutes, when the server "
 "has updated its data, it should work again."
 msgstr ""
+"Αυτό μπορεί να είναι ένα παροδικό ζήτημα εάν ο διακομιστής βρίσκεται στη "
+"διαδικασία λήψης νέων δεδομένων. Το αρχείο δεδομένων και η υπογραφή του "
+"είναι δύο αρχεία που πρέπει να ταιριάζουν μεταξύ τους. Σε περίπτωση που το "
+"αίτημα έφτασε στον διακομιστή κατά τη διάρκεια της ενημέρωσής τους, η "
+"επαλήθευση της υπογραφής ενδέχεται να αποτύχει. Μετά από λίγα λεπτά, όταν ο "
+"διακομιστής θα έχει ενημερώσει τα δεδομένα του, θα πρέπει να λειτουργήσει "
+"ξανά."
 
 #: src/callbacks/keyring.h:88
 msgid "Repository:"
@@ -1525,7 +1584,7 @@ msgstr "Όνομα Κλειδιού:"
 
 #: src/callbacks/keyring.h:92
 msgid "Key Algorithm:"
-msgstr ""
+msgstr "Αλγόριθμος Κλειδιού:"
 
 #: src/callbacks/keyring.h:93
 msgid "Key Created:"
@@ -1537,7 +1596,7 @@ msgstr "Λήξη Κλειδιού:"
 
 #: src/callbacks/keyring.h:96
 msgid "Subkey:"
-msgstr ""
+msgstr "Υποκλείδι:"
 
 #: src/callbacks/keyring.h:97
 msgid "Rpm Name:"
@@ -1567,15 +1626,15 @@ msgstr "Αποδοχή ενός μη υπογεγραμμένου αρχείου
 
 #. translator: %1% is a file name
 #: src/callbacks/keyring.h:166
-#, fuzzy, boost-format
+#, boost-format
 msgid "File '%1%' is unsigned."
-msgstr "Το αρχείο '%s' είναι ανυπόγραφο, συνέχεια;"
+msgstr "Το αρχείο '%1%' είναι ανυπόγραφο."
 
 #. translator: %1% is a file name, %2% a repositories name
 #: src/callbacks/keyring.h:169
-#, fuzzy, boost-format
+#, boost-format
 msgid "File '%1%' from repository '%2%' is unsigned."
-msgstr "Το αρχείο '%s' από το αποθετήριο '%s' είναι ανυπόγραφο, συνέχεια;"
+msgstr "Το αρχείο '%1%' από το αποθετήριο '%2%' είναι ανυπόγραφο."
 
 #: src/callbacks/keyring.h:201
 #, c-format, boost-format
@@ -1593,18 +1652,17 @@ msgstr ""
 
 #. translator: %1% is a file name, %2% is a gpg key ID
 #: src/callbacks/keyring.h:214
-#, fuzzy, boost-format
+#, boost-format
 msgid "File '%1%' is signed with an unknown key '%2%'."
-msgstr ""
-"Το αρχείο '%s' είναι υπογεγραμμένο με ένα άγνωστο κλειδί '%s'. Συνέχεια;"
+msgstr "Το αρχείο '%1%' είναι υπογεγραμμένο με ένα άγνωστο κλειδί '%2%'."
 
 #. translator: %1% is a file name, %2% is a gpg key ID, %3% a repositories name
 #: src/callbacks/keyring.h:217
-#, fuzzy, boost-format
+#, boost-format
 msgid "File '%1%' from repository '%3%' is signed with an unknown key '%2%'."
 msgstr ""
-"Το αρχείο '%s' από το αποθετήριο '%s' είναι υπογεγραμμένο με ένα άγνωστο "
-"κλειδί '%s'. Συνέχεια;"
+"Το αρχείο '%1%' από το αποθετήριο '%3%' είναι υπογεγραμμένο με ένα άγνωστο "
+"κλειδί '%2%'."
 
 #: src/callbacks/keyring.h:246
 msgid "Automatically importing the following key:"
@@ -1627,11 +1685,8 @@ msgstr ""
 
 #. translators: this message is shown after showing description of the key
 #: src/callbacks/keyring.h:287
-#, fuzzy
 msgid "Do you want to reject the key, or trust always?"
-msgstr ""
-"Θέλετε να απορρίψετε το κλειδί, να το αποδεχθείτε προσωρινά, ή να το "
-"αποδέχεστε πάντα;"
+msgstr "Θέλετε να απορρίψετε το κλειδί ή να το εμπιστεύεστε πάντα;"
 
 #. translators: r/t/a stands for Reject/TrustTemporarily/trustAlways(import)
 #. translate to whatever is appropriate for your language
@@ -1654,7 +1709,7 @@ msgstr "r/t"
 #. The answers should be lower case letters.
 #: src/callbacks/keyring.h:315
 msgid "r/a/"
-msgstr ""
+msgstr "r/a/"
 
 #. translators: help text for the 'r' option in the 'r/t/a' prompt
 #: src/callbacks/keyring.h:321
@@ -1707,11 +1762,13 @@ msgid ""
 "The rpm database seems to contain old V3 version gpg keys which are "
 "meanwhile obsolete and considered insecure:"
 msgstr ""
+"Η βάση δεδομένων rpm φαίνεται να περιέχει παλιά κλειδιά gpg έκδοσης V3, τα "
+"οποία είναι πλέον παρωχημένα και θεωρούνται μη ασφαλή:"
 
 #: src/callbacks/keyring.h:445
 #, boost-format
 msgid "To see details about a key call '%1%'."
-msgstr ""
+msgstr "Για να δείτε λεπτομέρειες σχετικά με ένα κλειδί, καλέστε '%1%'."
 
 #: src/callbacks/keyring.h:449
 #, boost-format
@@ -1719,14 +1776,16 @@ msgid ""
 "Unless you believe the key in question is still in use, you can remove it "
 "from the rpm database calling '%1%'."
 msgstr ""
+"Εκτός αν πιστεύετε ότι το εν λόγω κλειδί εξακολουθεί να χρησιμοποιείται, "
+"μπορείτε να το αφαιρέσετε από τη βάση δεδομένων rpm καλώντας '%1%'."
 
 #. translator: %1% is the number of keys, %2% the name of a repository
 #: src/callbacks/keyring.h:468
 #, boost-format
 msgid "Received %1% new package signing key from repository \"%2%\":"
 msgid_plural "Received %1% new package signing keys from repository \"%2%\":"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Λήφθηκε %1% νέο κλειδί υπογραφής πακέτων από το αποθετήριο \"%2%\":"
+msgstr[1] "Λήφθηκαν %1% νέα κλειδιά υπογραφής πακέτων από το αποθετήριο \"%2%\":"
 
 #: src/callbacks/keyring.h:472
 msgid ""
@@ -1734,16 +1793,22 @@ msgid ""
 "repository. In order to validate those packages upon download and "
 "installation the new keys will be imported into the rpm database."
 msgstr ""
+"Αυτά τα πρόσθετα κλειδιά χρησιμοποιούνται συνήθως για την υπογραφή πακέτων "
+"που παρέχονται από το αποθετήριο. Προκειμένου να επικυρωθούν αυτά τα πακέτα "
+"κατά τη λήψη και την εγκατάσταση, τα νέα κλειδιά θα εισαχθούν στη βάση "
+"δεδομένων rpm."
 
 #: src/callbacks/keyring.h:474
 msgid "New:"
-msgstr ""
+msgstr "Νέο:"
 
 #: src/callbacks/keyring.h:480
 msgid ""
 "The repository metadata introducing the new keys have been signed and "
 "validated by the trusted key:"
 msgstr ""
+"Τα μεταδεδομένα του αποθετηρίου που εισάγουν τα νέα κλειδιά έχουν υπογραφεί "
+"και επικυρωθεί από το έμπιστο κλειδί:"
 
 #: src/callbacks/keyring.h:503
 #, c-format, boost-format
@@ -1756,7 +1821,7 @@ msgid "Unknown digest %s for file %s."
 msgstr "Άγνωστη σύνοψη %s για το αρχείο %s."
 
 #: src/callbacks/keyring.h:528
-#, fuzzy, boost-format
+#, boost-format
 msgid ""
 "Digest verification failed for file '%1%'\n"
 "[%2%]\n"
@@ -1768,7 +1833,7 @@ msgstr ""
 "[%2%]\n"
 "\n"
 "  αναμενόταν %3%\n"
-"  αλλά ήρθε  %4%\n"
+"  αλλά λήφθηκε  %4%\n"
 
 #: src/callbacks/keyring.h:540
 msgid ""
@@ -1780,7 +1845,7 @@ msgstr ""
 "του συστήματος."
 
 #: src/callbacks/keyring.h:548
-#, fuzzy, boost-format
+#, boost-format
 msgid ""
 "However if you made certain that the file with checksum '%1%..' is secure, "
 "correct\n"
@@ -1789,12 +1854,12 @@ msgid ""
 "to unblock using this file on your own risk. Empty input will discard the "
 "file.\n"
 msgstr ""
-"Ωστόσο εάν έχετε διασφαλίσει ότι το αρχείο με άθροισμα ελέγχου '%1%..' είναι "
+"Ωστόσο, εάν έχετε βεβαιωθεί ότι το αρχείο με άθροισμα ελέγχου '%1%..' είναι "
 "ασφαλές, ορθό\n"
-"και θα χρησιμοποιηθεί εντός της λειτουργίας του, εισάγετε τους πρώτους 4 "
-"χαρακτήρες του\n"
-"αθροίσματος ελέγχου για να το ξεμπλοκάρετε χρησιμοποιώντας αυτό το αρχείο με "
-"δική σας ευθύνη. Κενή εισαγωγή θα απορρίψει το αρχείο.\n"
+"και θα πρέπει να χρησιμοποιηθεί σε αυτή τη λειτουργία, εισαγάγετε τους "
+"πρώτους 4 χαρακτήρες του\n"
+"αθροίσματος ελέγχου για να ξεμπλοκάρετε τη χρήση αυτού του αρχείου με δική "
+"σας ευθύνη. Κενή είσοδος θα απορρίψει το αρχείο.\n"
 
 #. translators: A prompt option
 #: src/callbacks/keyring.h:555
@@ -1977,15 +2042,15 @@ msgstr "Κωδικός πρόσβασης"
 
 #: src/callbacks/media.h:190
 msgid "Preloading Packages"
-msgstr ""
+msgstr "Προφόρτωση Πακέτων"
 
 #: src/callbacks/media.h:211
 msgid "Preloading Packages:"
-msgstr ""
+msgstr "Προφόρτωση Πακέτων:"
 
 #: src/callbacks/media.h:263
 msgid "Preloading:"
-msgstr ""
+msgstr "Προφόρτωση:"
 
 #. Translator: prefetch progress bar result: ".............[done]"
 #: src/callbacks/media.h:278
@@ -1994,9 +2059,8 @@ msgstr "έγινε"
 
 #. Translator: prefetch progress bar result: "........[not found]"
 #: src/callbacks/media.h:283
-#, fuzzy
 msgid "not found"
-msgstr "Δεν βρέθηκε"
+msgstr "δεν βρέθηκε"
 
 #. Translator: prefetch progress bar result: "............[error]"
 #: src/callbacks/media.h:290
@@ -2005,15 +2069,15 @@ msgstr "σφάλμα"
 
 #: src/callbacks/media.h:307
 msgid "Preload finished."
-msgstr ""
+msgstr "Η προφόρτωση ολοκληρώθηκε."
 
 #: src/callbacks/media.h:312
 msgid "success"
-msgstr ""
+msgstr "επιτυχία"
 
 #: src/callbacks/media.h:315
 msgid "files missing"
-msgstr ""
+msgstr "αρχεία λείπουν"
 
 #: src/callbacks/repo.h:60
 msgid "Retrieving delta"
@@ -2084,7 +2148,11 @@ msgid_plural ""
 "%1% packages had to be excluded from file conflicts check because they are "
 "not yet downloaded."
 msgstr[0] ""
+"%1% πακέτο έπρεπε να εξαιρεθεί από τον έλεγχο συγκρούσεων αρχείων επειδή δεν "
+"έχει ληφθεί ακόμα."
 msgstr[1] ""
+"%1% πακέτα έπρεπε να εξαιρεθούν από τον έλεγχο συγκρούσεων αρχείων επειδή "
+"δεν έχουν ληφθεί ακόμα."
 
 #. TranslatorExplanation %1%(commandline option)
 #: src/callbacks/rpm.h:513
@@ -2127,19 +2195,19 @@ msgstr ""
 #: src/callbacks/rpm.h:760 src/callbacks/rpm.h:767
 #, c-format, boost-format
 msgid "Executing %s script for: %s"
-msgstr ""
+msgstr "Εκτέλεση σεναρίου (script) %s για: %s"
 
 #. TranslatorExplanation This text is a progress display label e.g. "Installing: foo-1.1.2 [42%]"
 #: src/callbacks/rpm.h:774
 #, c-format, boost-format
 msgid "Executing %s script"
-msgstr ""
+msgstr "Εκτέλεση σεναρίου (script) %s"
 
 #. TranslatorExplanation This text is a progress display label e.g. "Installing: foo-1.1.2 [42%]"
 #: src/callbacks/rpm.h:896
 #, c-format, boost-format
 msgid "Cleaning up: %s"
-msgstr ""
+msgstr "Εκκαθάριση: %s"
 
 #. translator: %s is an other command: "This is an alias for 'zypper info -t patch'."
 #: src/commands/commandhelpformatter.h:95
@@ -2149,43 +2217,41 @@ msgstr "Αυτό είναι ένα ψευδώνυμο για το '%s'."
 
 #: src/commands/commandhelpformatter.h:108
 msgid "Examples:"
-msgstr ""
+msgstr "Παραδείγματα:"
 
 #: src/commands/commandhelpformatter.h:111
 msgid "Arguments:"
-msgstr ""
+msgstr "Ορίσματα:"
 
 #: src/commands/commandhelpformatter.h:124 src/utils/flags/zyppflags.cc:627
 msgid "Command options:"
-msgstr ""
+msgstr "Επιλογές εντολής:"
 
 #: src/commands/commandhelpformatter.h:127
-#, fuzzy
 msgid "Solver options:"
-msgstr "εμφάνιση όλων των επιλογών"
+msgstr "Επιλογές solver:"
 
 #: src/commands/commandhelpformatter.h:130
 msgid "Expert options:"
-msgstr ""
+msgstr "Επιλογές για προχωρημένους:"
 
 #: src/commands/commandhelpformatter.h:133
 msgid "This command has no additional options."
 msgstr "Αυτή η εντολή δεν έχει επιπρόσθετες επιλογές."
 
 #: src/commands/commandhelpformatter.h:136
-#, fuzzy
 msgid "Legacy options:"
-msgstr "εμφάνιση όλων των επιλογών"
+msgstr "Παλαιού τύπου (legacy) επιλογές:"
 
 #. translator: '-r             The same as -f.
 #: src/commands/commandhelpformatter.h:140
 #, boost-format
 msgid "The same as %1%."
-msgstr ""
+msgstr "Το ίδιο με %1%."
 
 #: src/commands/commandhelpformatter.h:188
 msgid "Usage:"
-msgstr ""
+msgstr "Χρήση:"
 
 #: src/commands/commandhelpformatter.h:190
 msgid "Global Options:"
@@ -2217,27 +2283,33 @@ msgstr ""
 #: src/commands/commonflags.h:45
 msgid "Consider only patches which affect the package management itself."
 msgstr ""
+"Εξέταση μόνο διορθώσεων (patches) που επηρεάζουν την ίδια τη διαχείριση "
+"πακέτων."
 
 #: src/commands/conditions.cc:19
 msgid "Root privileges are required to run this command."
-msgstr ""
+msgstr "Απαιτούνται προνόμια root για την εκτέλεση αυτής της εντολής."
 
 #: src/commands/conditions.cc:47
 msgid ""
 "This is a transactional-server, please use transactional-update to update or "
 "modify the system."
 msgstr ""
+"Αυτός είναι ένας transactional-server. Παρακαλώ χρησιμοποιήστε το "
+"transactional-update για να ενημερώσετε ή να τροποποιήσετε το σύστημα."
 
 #: src/commands/conditions.cc:49
 msgid ""
 "The target filesystem is mounted as read-only. Please make sure the target "
 "filesystem is writeable."
 msgstr ""
+"Το σύστημα αρχείων προορισμού είναι προσαρτημένο ως μόνο για ανάγνωση. "
+"Παρακαλώ βεβαιωθείτε ότι το σύστημα αρχείων προορισμού είναι εγγράψιμο."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/distupgrade.cc:20
 msgid "dist-upgrade (dup) [OPTIONS]"
-msgstr ""
+msgstr "dist-upgrade (dup) [ΕΠΙΛΟΓΕΣ]"
 
 #. translators: command summary: dist-upgrade, dup
 #. translators: command description
@@ -2252,7 +2324,7 @@ msgstr "Περιορισμένη ενημέρωση σε καθορισμένο 
 
 #: src/commands/distupgrade.cc:41
 msgid "Remove unneeded orphaned packages."
-msgstr ""
+msgstr "Αφαίρεση μη απαραίτητων ορφανών πακέτων."
 
 #. FailIfReposFail
 #: src/commands/distupgrade.cc:55
@@ -2262,10 +2334,17 @@ msgid ""
 "enabled repositories fail to refresh. This may severely damage the system. "
 "If a failing repository is actually not needed, it must be disabled."
 msgstr ""
+"Λόγω του τρόπου χειρισμού των ορφανών πακέτων, η εντολή dist-upgrade "
+"εξαρτάται από τη σωστή ρύθμιση των αποθετηρίων περισσότερο από οποιαδήποτε "
+"άλλη εντολή. Δεν πρέπει να συνεχίσει εάν τα ενεργοποιημένα αποθετήρια "
+"αποτύχουν να ανανεωθούν. Αυτό μπορεί να βλάψει σοβαρά το σύστημα. Εάν ένα "
+"αποθετήριο που αποτυγχάνει δεν είναι στην πραγματικότητα απαραίτητο, πρέπει "
+"να απενεργοποιηθεί."
 
 #: src/commands/distupgrade.cc:57
 msgid "See 'man zypper' for more information about this command."
 msgstr ""
+"Δείτε 'man zypper' για περισσότερες πληροφορίες σχετικά με αυτήν την εντολή."
 
 #: src/commands/distupgrade.cc:88
 #, c-format, boost-format
@@ -2281,12 +2360,12 @@ msgstr ""
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/help.cc:22
 msgid "zypper [--GLOBAL-OPTIONS] <COMMAND> [--COMMAND-OPTIONS] [ARGUMENTS]"
-msgstr ""
+msgstr "zypper [--ΓΕΝΙΚΕΣ-ΕΠΙΛΟΓΕΣ] <ΕΝΤΟΛΗ> [--ΕΠΙΛΟΓΕΣ-ΕΝΤΟΛΗΣ] [ΟΡΙΣΜΑΤΑ]"
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/help.cc:25
 msgid "zypper <SUBCOMMAND> [--COMMAND-OPTIONS] [ARGUMENTS]"
-msgstr ""
+msgstr "zypper <ΥΠΟΕΝΤΟΛΗ> [--ΕΠΙΛΟΓΕΣ-ΕΝΤΟΛΗΣ] [ΟΡΙΣΜΑΤΑ]"
 
 #: src/commands/help.cc:89 src/commands/help.cc:90
 msgid "Print zypper help"
@@ -2295,12 +2374,12 @@ msgstr "Εμφάνιση βοήθειας"
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/inrverify.cc:68
 msgid "install-new-recommends (inr) [OPTIONS]"
-msgstr ""
+msgstr "install-new-recommends (inr) [ΕΠΙΛΟΓΕΣ]"
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/inrverify.cc:71
 msgid "verify (ve) [OPTIONS]"
-msgstr ""
+msgstr "verify (ve) [ΕΠΙΛΟΓΕΣ]"
 
 #. translators: command summary: install-new-recommends, inr
 #: src/commands/inrverify.cc:81
@@ -2323,6 +2402,11 @@ msgid ""
 "unconditionally on small or minimal systems, as it may easily add a large "
 "number of packages."
 msgstr ""
+"Εγκατάσταση νέων πακέτων που προτείνονται από ήδη εγκατεστημένα πακέτα. Αυτή "
+"η εντολή ουσιαστικά επανεκτιμά τις προτάσεις όλων των εγκατεστημένων πακέτων "
+"και συμπληρώνει το σύστημα ανάλογα. Μην εκτελείτε αυτήν την εντολή χωρίς "
+"περιορισμούς σε μικρά ή ελάχιστα (minimal) συστήματα, καθώς μπορεί εύκολα να "
+"προσθέσει μεγάλο αριθμό πακέτων."
 
 #. translators: command description, %1% is a zypper command
 #: src/commands/inrverify.cc:98
@@ -2332,6 +2416,9 @@ msgid ""
 "supporting available hardware, languages or filesystems. Useful after having "
 "added e.g. new hardware or driver repos."
 msgstr ""
+"Όταν καλείται ως '%1%', περιορίζει την εντολή στην αναζήτηση μόνο πακέτων "
+"που υποστηρίζουν διαθέσιμο υλικό, γλώσσες ή συστήματα αρχείων. Χρήσιμο μετά "
+"την προσθήκη π.χ. νέου υλικού ή αποθετηρίων οδηγών (drivers)."
 
 #. translators: command description
 #: src/commands/inrverify.cc:101
@@ -2349,12 +2436,12 @@ msgstr "Επιλογή πακέτων βάση ονόματος, όχι βάση
 
 #: src/commands/installremove.cc:63
 msgid "Select packages solely by capability."
-msgstr ""
+msgstr "Επιλογή πακέτων αποκλειστικά βάσει δυνατότητας."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/installremove.cc:82
 msgid "remove (rm) [OPTIONS] <CAPABILITY> ..."
-msgstr ""
+msgstr "remove (rm) [ΕΠΙΛΟΓΕΣ] <ΔΥΝΑΤΟΤΗΤΑ> ..."
 
 #. translators: command summary: remove, rm
 #: src/commands/installremove.cc:84
@@ -2402,7 +2489,7 @@ msgstr "Η απεγκατάσταση ενός πηγαίου πακέτου δ�
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/installremove.cc:166
 msgid "install (in) [OPTIONS] <CAPABILITY|RPM_FILE_URI> ..."
-msgstr ""
+msgstr "install (in) [ΕΠΙΛΟΓΕΣ] <ΔΥΝΑΤΟΤΗΤΑ|RPM_FILE_URI> ..."
 
 #. translators: command summary: install, in
 #: src/commands/installremove.cc:168
@@ -2416,11 +2503,14 @@ msgid ""
 "location. A capability is NAME[.ARCH][OP<VERSION>], where OP is one of <, "
 "<=, =, >=, >."
 msgstr ""
+"Εγκατάσταση πακέτων με καθορισμένες δυνατότητες ή αρχείων RPM από "
+"καθορισμένη τοποθεσία. Μια δυνατότητα είναι NAME[.ARCH][OP<VERSION>], όπου "
+"OP είναι ένας από τους τελεστές <, <=, =, >=, >."
 
 #. translators: --from <ALIAS|#|URI>
 #: src/commands/installremove.cc:195 src/commands/utils/download.cc:170
 msgid "Select packages from the specified repository."
-msgstr ""
+msgstr "Επιλογή πακέτων από το καθορισμένο αποθετήριο."
 
 #. translators: --oldpackage
 #: src/commands/installremove.cc:199
@@ -2428,10 +2518,15 @@ msgid ""
 "Allows one to replace a newer item with an older one. Handy if you are doing "
 "a rollback. Unlike --force it will not enforce a reinstall."
 msgstr ""
+"Επιτρέπει την αντικατάσταση ενός νεότερου στοιχείου με ένα παλαιότερο. "
+"Χρήσιμο αν κάνετε επαναφορά (rollback). Σε αντίθεση με το --force, δεν "
+"επιβάλλει επανεγκατάσταση."
 
 #: src/commands/installremove.cc:203
 msgid "Silently install unsigned rpm packages given as commandline parameters."
 msgstr ""
+"Σιωπηλή εγκατάσταση μη υπογεγραμμένων πακέτων rpm που δίνονται ως παράμετροι "
+"γραμμής εντολών."
 
 #. translators: -f, --force
 #: src/commands/installremove.cc:208
@@ -2439,6 +2534,8 @@ msgid ""
 "Install even if the item is already installed (reinstall), downgraded or "
 "changes vendor or architecture."
 msgstr ""
+"Εγκατάσταση ακόμα και αν το στοιχείο είναι ήδη εγκατεστημένο "
+"(επανεγκατάσταση), αν υποβαθμίζεται ή αν αλλάζει προμηθευτή ή αρχιτεκτονική."
 
 #. translators: rug related message, shown if
 #. 'zypper in --entire-catalog foorepo someargument' is specified
@@ -2453,12 +2550,12 @@ msgstr "Δεν καθορίστηκε έγκυρη παράμετρος."
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/installremove.cc:312
 msgid "removeptf (rmptf) [OPTIONS] <PTF|CAPABILITY> ..."
-msgstr ""
+msgstr "removeptf (rmptf) [ΕΠΙΛΟΓΕΣ] <PTF|ΔΥΝΑΤΟΤΗΤΑ> ..."
 
 #. translators: command summary: removeptf, rmptf
 #: src/commands/installremove.cc:314
 msgid "Remove (not only) PTFs."
-msgstr ""
+msgstr "Αφαίρεση (όχι μόνο) PTFs."
 
 #. translators: command description
 #: src/commands/installremove.cc:316
@@ -2470,6 +2567,13 @@ msgid ""
 "the install command. It is the recommended way to remove a PTF (Program "
 "Temporary Fix)."
 msgstr ""
+"Μια εντολή αφαίρεσης η οποία προτιμά την αντικατάσταση των εξαρτώμενων "
+"πακέτων αντί για την αφαίρεσή τους. Στην πραγματικότητα πρόκειται για μια "
+"πλήρη εντολή εγκατάστασης με τον τροποποιητή αφαίρεσης (-) εφαρμοσμένο στα "
+"ορίσματά της. Έτσι, το 'removeptf foo' είναι το ίδιο με το 'install -- -"
+"foo'. Γι' αυτό η εντολή δέχεται τις ίδιες επιλογές με την εντολή "
+"εγκατάστασης. Είναι ο προτεινόμενος τρόπος αφαίρεσης ενός PTF (Program "
+"Temporary Fix)."
 
 #: src/commands/installremove.cc:317
 msgid ""
@@ -2479,31 +2583,36 @@ msgid ""
 "remove command would do. The removeptf command however will aim to replace "
 "the dependant packages by their official update versions."
 msgstr ""
+"Ένα PTF συνήθως αφαιρείται μόλις η διόρθωση που παρέχει εφαρμοστεί στην "
+"τελευταία επίσημη ενημέρωση των εξαρτώμενων πακέτων. Όμως, δεν θέλετε τα "
+"εξαρτώμενα πακέτα να αφαιρεθούν μαζί με το PTF, κάτι που θα έκανε η εντολή "
+"remove. Η εντολή removeptf ωστόσο στοχεύει στην αντικατάσταση των "
+"εξαρτώμενων πακέτων από τις επίσημες εκδόσεις ενημέρωσής τους."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/listpatches.cc:16
 msgid "list-patches (lp) [OPTIONS]"
-msgstr ""
+msgstr "list-patches (lp) [ΕΠΙΛΟΓΕΣ]"
 
 #. translators: command summary: list-patches, lp
 #: src/commands/listpatches.cc:18
 msgid "List available patches."
-msgstr ""
+msgstr "Λίστα διαθέσιμων διορθώσεων (patches)."
 
 #. translators: command description
 #: src/commands/listpatches.cc:20
 msgid "List all applicable patches."
-msgstr ""
+msgstr "Λίστα όλων των εφαρμόσιμων διορθώσεων."
 
 #. translators: -a, --all
 #: src/commands/listpatches.cc:31
 msgid "List all patches, not only applicable ones."
-msgstr ""
+msgstr "Λίστα όλων των διορθώσεων, όχι μόνο των εφαρμόσιμων."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/listupdates.cc:16
 msgid "list-updates (lu) [OPTIONS]"
-msgstr ""
+msgstr "list-updates (lu) [ΕΠΙΛΟΓΕΣ]"
 
 #. translators: command summary: list-updates, lu
 #: src/commands/listupdates.cc:18
@@ -2527,19 +2636,20 @@ msgstr ""
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/locale/addlocalecmd.cc:20
 msgid "addlocale (aloc) [OPTIONS] <LOCALE> ..."
-msgstr ""
+msgstr "addlocale (aloc) [ΕΠΙΛΟΓΕΣ] <LOCALE> ..."
 
 #: src/commands/locale/addlocalecmd.cc:21
 msgid "Add locale(s) to requested locales."
-msgstr ""
+msgstr "Προσθήκη τοπικών ρυθμίσεων (locales) στις αιτούμενες."
 
 #: src/commands/locale/addlocalecmd.cc:22
 msgid "Add given locale(s) to the list of requested locales."
 msgstr ""
+"Προσθήκη των δοθέντων locales στη λίστα των αιτούμενων τοπικών ρυθμίσεων."
 
 #: src/commands/locale/addlocalecmd.cc:33
 msgid "Do not install corresponding packages for given locale(s)."
-msgstr ""
+msgstr "Να μην εγκατασταθούν τα αντίστοιχα πακέτα για τα δοθέντα locales."
 
 #: src/commands/locale/addlocalecmd.cc:57
 #, c-format, boost-format
@@ -2547,66 +2657,70 @@ msgid ""
 "Specify locale which shall be supported by the language code. Get a list of "
 "all available locales by calling '%s'."
 msgstr ""
+"Καθορίστε το locale που θα υποστηρίζεται από τον κωδικό γλώσσας. Λάβετε μια "
+"λίστα με όλα τα διαθέσιμα locales καλώντας το '%s'."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/locale/localescmd.cc:17
 msgid "locales (lloc) [OPTIONS] [LOCALE] ..."
-msgstr ""
+msgstr "locales (lloc) [ΕΠΙΛΟΓΕΣ] [LOCALE] ..."
 
 #: src/commands/locale/localescmd.cc:18
 msgid "List requested locales (languages codes)."
-msgstr ""
+msgstr "Λίστα αιτούμενων locales (κωδικοί γλωσσών)."
 
 #: src/commands/locale/localescmd.cc:20
 msgid "List requested locales and corresponding packages."
-msgstr ""
+msgstr "Λίστα αιτούμενων locales και των αντίστοιχων πακέτων."
 
 #: src/commands/locale/localescmd.cc:34
 msgid "Show corresponding packages."
-msgstr ""
+msgstr "Εμφάνιση αντίστοιχων πακέτων."
 
 #: src/commands/locale/localescmd.cc:35
 msgid "List all available locales."
-msgstr ""
+msgstr "Λίστα όλων των διαθέσιμων locales."
 
 #: src/commands/locale/localescmd.cc:48
 msgid "Ignoring positional arguments because --all argument was provided."
-msgstr ""
+msgstr "Αγνόηση ορισμάτων θέσης επειδή δόθηκε το όρισμα --all."
 
 #: src/commands/locale/localescmd.cc:75
 msgid "The locale(s) for which the information shall be printed."
-msgstr ""
+msgstr "Τα locales για τα οποία θα εκτυπωθούν οι πληροφορίες."
 
 #: src/commands/locale/localescmd.cc:79
 msgid ""
 "Get all locales with lang code 'en' that have their own country code, "
 "excluding the fallback 'en':"
 msgstr ""
+"Λήψη όλων των locales με κωδικό γλώσσας 'en' που έχουν δικό τους κωδικό "
+"χώρας, εξαιρουμένου του εφεδρικού 'en':"
 
 #: src/commands/locale/localescmd.cc:86
 msgid "Get all locales with lang code 'en' with or without country code:"
-msgstr ""
+msgstr "Λήψη όλων των locales με κωδικό γλώσσας 'en' με ή χωρίς κωδικό χώρας:"
 
 #: src/commands/locale/localescmd.cc:93
 msgid "Get the locale matching the argument exactly: "
-msgstr ""
+msgstr "Λήψη του locale που ταιριάζει ακριβώς με το όρισμα: "
 
 #: src/commands/locale/localescmd.cc:100
 msgid "Get the list of packages which are available for 'de' and 'en':"
-msgstr ""
+msgstr "Λήψη της λίστας πακέτων που είναι διαθέσιμα για 'de' και 'en':"
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/locale/removelocalecmd.cc:18
 msgid "removelocale (rloc) [OPTIONS] <LOCALE> ..."
-msgstr ""
+msgstr "removelocale (rloc) [ΕΠΙΛΟΓΕΣ] <LOCALE> ..."
 
 #: src/commands/locale/removelocalecmd.cc:19
 msgid "Remove locale(s) from requested locales."
-msgstr ""
+msgstr "Αφαίρεση locales από τα αιτούμενα."
 
 #: src/commands/locale/removelocalecmd.cc:20
 msgid "Remove given locale(s) from the list of supported languages."
-msgstr ""
+msgstr "Αφαίρεση των δοθέντων locales από τη λίστα των υποστηριζόμενων γλωσσών."
 
 #: src/commands/locale/removelocalecmd.cc:35
 #, c-format, boost-format
@@ -2614,15 +2728,17 @@ msgid ""
 "Specify locales which shall be removed by the language code. Get the list of "
 "requested locales by calling '%s'."
 msgstr ""
+"Καθορίστε τα locales που θα αφαιρεθούν βάσει του κωδικού γλώσσας. Λάβετε τη "
+"λίστα των αιτούμενων locales καλώντας το '%s'."
 
 #: src/commands/locale/removelocalecmd.cc:46
 msgid "Do not remove corresponding packages for given locale(s)."
-msgstr ""
+msgstr "Να μην αφαιρεθούν τα αντίστοιχα πακέτα για τα δοθέντα locales."
 
 #. translators: command synopsis; do not translate the command 'name (abbreviations)' or '-option' names
 #: src/commands/locks/add.cc:29
 msgid "addlock (al) [OPTIONS] <LOCKSPEC>..."
-msgstr ""
+msgstr "addlock (al) [ΕΠΙΛΟΓΕΣ] <ΠΡΟΔΙΑΓΡΑΦΗ_ΚΛΕΙΔΩΜΑΤΟΣ>..."
 
 #. translators: command summary
 #: src/commands/locks/add.cc:31 src/commands/locks/add.cc:34
@@ -2636,6 +2752,10 @@ msgid ""
 "have their KIND: string prepended (e.g. 'patch:foo') or use the commands --"
 "type option."
 msgstr ""
+"Η ΠΡΟΔΙΑΓΡΑΦΗ_ΚΛΕΙΔΩΜΑΤΟΣ αποτελείται από το '[ΤΥΠΟΣ:]ΟΝΟΜΑ[ OP ΕΚΔΟΣΗ]', "
+"όπου το ΟΝΟΜΑ μπορεί να είναι και μοτίβο glob με χαρακτήρες μπαλαντέρ * και "
+"?. Τύποι που δεν αφορούν πακέτα πρέπει να έχουν πρόθεμα τον ΤΥΠΟ: (π.χ. "
+"'patch:foo') ή να χρησιμοποιούν την επιλογή --type."
 
 #: src/commands/locks/add.cc:36
 msgid ""
@@ -2643,6 +2763,10 @@ msgid ""
 "optionally restrict the lock to match a specific edition or edition range "
 "using =, <, <=, >, >= or != followed an EDITION."
 msgstr ""
+"Η βασική μορφή θα κλειδώσει όλες τις εκδόσεις των στοιχείων που ταιριάζουν. "
+"Μπορείτε προαιρετικά να περιορίσετε το κλείδωμα σε μια συγκεκριμένη έκδοση ή "
+"εύρος εκδόσεων χρησιμοποιώντας τα =, <, <=, >, >= ή != ακολουθούμενα από μια "
+"ΕΚΔΟΣΗ."
 
 #: src/commands/locks/add.cc:46
 msgid "Restrict the lock to the specified repository."
@@ -2650,7 +2774,7 @@ msgstr "Περιορισμός της κλειδώματος στο συγκεκ
 
 #: src/commands/locks/add.cc:48
 msgid "Reason for specific lock."
-msgstr ""
+msgstr "Λόγος για το συγκεκριμένο κλείδωμα."
 
 #: src/commands/locks/add.cc:81
 msgid "Specified lock has been successfully added."
@@ -2665,7 +2789,7 @@ msgstr "Πρόβλημα κατά την προσθήκη του κλειδώμ�
 # =============================================================================
 #: src/commands/locks/clean.cc:16
 msgid "cleanlocks (cl)"
-msgstr ""
+msgstr "cleanlocks (cl)"
 
 #. translators: command summary
 #: src/commands/locks/clean.cc:18
@@ -2704,7 +2828,7 @@ msgstr "Όνομα"
 
 #: src/commands/locks/list.cc:135
 msgid "Matches"
-msgstr ""
+msgstr "Αντιστοιχίες"
 
 #. translators: Table column header
 #. translators: type (general header)
@@ -2724,7 +2848,7 @@ msgstr "Αποθετήριο"
 
 #: src/commands/locks/list.cc:136
 msgid "Comment"
-msgstr ""
+msgstr "Σχόλιο"
 
 #. translators: locks table value
 #: src/commands/locks/list.cc:154 src/commands/locks/list.cc:233
@@ -2739,17 +2863,17 @@ msgstr "(οποιοδήποτε)"
 #. translators: property name; short; used like "Name: value"
 #: src/commands/locks/list.cc:196
 msgid "Keep installed"
-msgstr ""
+msgstr "Διατήρηση εγκατεστημένου"
 
 #. translators: property name; short; used like "Name: value"
 #: src/commands/locks/list.cc:204
 msgid "Do not install"
-msgstr ""
+msgstr "Να μην εγκατασταθεί"
 
 #. translators: command synopsis; do not translate the command 'name (abbreviations)' or '-option' names
 #: src/commands/locks/list.cc:257
 msgid "locks (ll) [OPTIONS]"
-msgstr ""
+msgstr "locks (ll) [ΕΠΙΛΟΓΕΣ]"
 
 #: src/commands/locks/list.cc:258
 msgid "List current package locks."
@@ -2758,10 +2882,12 @@ msgstr "Λίστα τρεχόντων κλειδωμάτων πακέτων."
 #: src/commands/locks/list.cc:286
 msgid "Show the number of resolvables matched by each lock."
 msgstr ""
+"Εμφάνιση του αριθμού των επιλύσιμων (resolvables) που αντιστοιχούν σε κάθε "
+"κλείδωμα."
 
 #: src/commands/locks/list.cc:287
 msgid "List the resolvables matched by each lock."
-msgstr ""
+msgstr "Λίστα των επιλύσιμων (resolvables) που αντιστοιχούν σε κάθε κλείδωμα."
 
 #: src/commands/locks/list.cc:301
 msgid "Error reading the locks file:"
@@ -2774,7 +2900,7 @@ msgstr "Δεν έχουν οριστεί κλειδώματα πακέτων."
 # =============================================================================
 #: src/commands/locks/remove.cc:25
 msgid "removelock (rl) [OPTIONS] <LOCK-NUMBER|PACKAGENAME> ..."
-msgstr ""
+msgstr "removelock (rl) [ΕΠΙΛΟΓΕΣ] <ΑΡΙΘΜΟΣ_ΚΛΕΙΔΩΜΑΤΟΣ|ΟΝΟΜΑ_ΠΑΚΕΤΟΥ> ..."
 
 #: src/commands/locks/remove.cc:26
 msgid "Remove a package lock."
@@ -2816,7 +2942,7 @@ msgstr "Πρόβλημα κατά την αφαίρεση του κλειδώμ�
 #. translators: command summary: needs-rebooting
 #: src/commands/needs-rebooting.cc:22
 msgid "Check if the reboot-needed flag was set."
-msgstr ""
+msgstr "Έλεγχος αν έχει οριστεί η σημαία reboot-needed."
 
 #: src/commands/needs-rebooting.cc:24
 msgid ""
@@ -2825,36 +2951,48 @@ msgid ""
 "Exit code ZYPPER_EXIT_INF_REBOOT_NEEDED indicates that a reboot is "
 "suggested, otherwise the exit code is set to ZYPPER_EXIT_OK."
 msgstr ""
+"Ελέγχει αν η σημαία reboot-needed ορίστηκε από προηγούμενη ενημέρωση ή "
+"εγκατάσταση μιας βασικής βιβλιοθήκης ή υπηρεσίας.\n"
+"Ο κωδικός εξόδου ZYPPER_EXIT_INF_REBOOT_NEEDED υποδεικνύει ότι προτείνεται "
+"επανεκκίνηση, διαφορετικά ο κωδικός εξόδου ορίζεται σε ZYPPER_EXIT_OK."
 
 #: src/commands/needs-rebooting.cc:26
 msgid ""
 "This is the recommended way for scripts to test whether a system reboot is "
 "suggested."
 msgstr ""
+"Αυτός είναι ο προτεινόμενος τρόπος για σενάρια (scripts) ώστε να ελέγχουν αν "
+"προτείνεται επανεκκίνηση του συστήματος."
 
 #: src/commands/needs-rebooting.cc:38
 msgid ""
 "Since the last system boot core libraries or services have been updated."
 msgstr ""
+"Από την τελευταία εκκίνηση του συστήματος έχουν ενημερωθεί βασικές "
+"βιβλιοθήκες ή υπηρεσίες."
 
 #: src/commands/needs-rebooting.cc:39
 msgid ""
 "Reboot is suggested to ensure that your system benefits from these updates."
 msgstr ""
+"Προτείνεται επανεκκίνηση για να διασφαλιστεί ότι το σύστημά σας επωφελείται "
+"από αυτές τις ενημερώσεις."
 
 #: src/commands/needs-rebooting.cc:44
 msgid ""
 "No core libraries or services have been updated since the last system boot."
 msgstr ""
+"Δεν έχουν ενημερωθεί βασικές βιβλιοθήκες ή υπηρεσίες από την τελευταία "
+"εκκίνηση του συστήματος."
 
 #: src/commands/needs-rebooting.cc:45
 msgid "Reboot is probably not necessary."
-msgstr ""
+msgstr "Η επανεκκίνηση πιθανώς δεν είναι απαραίτητη."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/nullcommands.cc:17
 msgid "moo"
-msgstr ""
+msgstr "moo"
 
 #. translators: command summary
 #. translators: command description
@@ -2928,7 +3066,7 @@ msgstr ""
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/nullcommands.cc:37
 msgid "what-provides (wp) <CAPABILITY>"
-msgstr ""
+msgstr "what-provides (wp) <ΔΥΝΑΤΟΤΗΤΑ>"
 
 #. translators: command summary: what-provides, wp
 #: src/commands/nullcommands.cc:39
@@ -2946,6 +3084,9 @@ msgid ""
 "The command is an alias for '%1%' and performs a case-insensitive search. "
 "For a case-sensitive search call the search command and add the '%2%' option."
 msgstr ""
+"Η εντολή είναι ένα ψευδώνυμο για το '%1%' και πραγματοποιεί αναζήτηση χωρίς "
+"διάκριση πεζών-κεφαλαίων. Για αναζήτηση με διάκριση πεζών-κεφαλαίων, καλέστε "
+"την εντολή search και προσθέστε την επιλογή '%2%'."
 
 #. "what-provides" is obsolete
 #. The "what-provides" now is included in "search" command, e.g.
@@ -2964,6 +3105,7 @@ msgstr "Δείτε την '%s' για τις διαθέσιμες επολογέ
 #: src/commands/optionsets.cc:33
 msgid "Don't change anything, just report what would be done."
 msgstr ""
+"Να μην γίνει καμία αλλαγή, απλή αναφορά των ενεργειών που θα εκτελούνταν."
 
 #. translators: %1% is a commandline option (like "--download-only")
 #: src/commands/optionsets.cc:35
@@ -2972,6 +3114,8 @@ msgid ""
 "A meaningful file conflict check can only be performed if used together with "
 "'%1%'."
 msgstr ""
+"Ένας ουσιαστικός έλεγχος διενέξεων αρχείων μπορεί να πραγματοποιηθεί μόνο "
+"εάν χρησιμοποιηθεί μαζί με το '%1%'."
 
 #. translators: -r, --repo <ALIAS|#|URI>
 #: src/commands/optionsets.cc:67
@@ -2982,6 +3126,7 @@ msgstr "Εργασία μόνο με καθορισμένο αποθετήριο
 #, c-format, boost-format
 msgid "Option '--%s' overrides a previously set download mode."
 msgstr ""
+"Η επιλογή '--%s' παρακάμπτει μια προηγουμένως ορισμένη λειτουργία λήψης."
 
 #: src/commands/optionsets.cc:116
 #, c-format, boost-format
@@ -3014,12 +3159,16 @@ msgid ""
 "Automatically say 'yes' to third party license confirmation prompt. See 'man "
 "zypper' for more details."
 msgstr ""
+"Αυτόματη απάντηση 'ναι' στην προτροπή επιβεβαίωσης άδειας χρήσης τρίτων. "
+"Δείτε 'man zypper' για περισσότερες λεπτομέρειες."
 
 #: src/commands/optionsets.cc:244
 msgid ""
 "Automatically accept product licenses only. See 'man zypper' for more "
 "details."
 msgstr ""
+"Αυτόματη αποδοχή μόνο των αδειών χρήσης προϊόντων. Δείτε 'man zypper' για "
+"περισσότερες λεπτομέρειες."
 
 #. translators: --replacefiles
 #: src/commands/optionsets.cc:264
@@ -3039,46 +3188,50 @@ msgid ""
 "Don't require user interaction. Alias for the --non-interactive global "
 "option."
 msgstr ""
+"Να μην απαιτείται αλληλεπίδραση με τον χρήστη. Ψευδώνυμο για την καθολική "
+"επιλογή --non-interactive."
 
 #: src/commands/optionsets.cc:309
 msgid ""
 "Whether applicable optional patches should be treated as needed or be "
 "excluded."
 msgstr ""
+"Εάν οι εφαρμόσιμες προαιρετικές διορθώσεις θα πρέπει να αντιμετωπίζονται ως "
+"απαραίτητες ή να εξαιρούνται."
 
 #: src/commands/optionsets.cc:312
 msgid "The default is to exclude optional patches."
-msgstr ""
+msgstr "Η προεπιλογή είναι η εξαίρεση των προαιρετικών διορθώσεων."
 
 #: src/commands/optionsets.cc:313
 msgid "The default is to include optional patches."
-msgstr ""
+msgstr "Η προεπιλογή είναι η συμπερίληψη των προαιρετικών διορθώσεων."
 
 #. translators: --with-interactive
 #: src/commands/optionsets.cc:348
 msgid "Do not skip interactive updates."
-msgstr ""
+msgstr "Να μην παραλείπονται οι διαδραστικές ενημερώσεις."
 
 #. translators: --skip-interactive
 #: src/commands/optionsets.cc:352
 msgid "Skip interactive updates."
-msgstr ""
+msgstr "Παράλειψη των διαδραστικών ενημερώσεων."
 
 #. translators: --sort-by-name
 #: src/commands/optionsets.cc:372
 msgid "Sort packages by name (default)."
-msgstr ""
+msgstr "Ταξινόμηση πακέτων βάσει ονόματος (προεπιλογή)."
 
 #. translators: --sort-by-repo
 #. translators: --sort-by-catalog
 #: src/commands/optionsets.cc:382 src/commands/optionsets.cc:393
 msgid "Sort packages by repository."
-msgstr ""
+msgstr "Ταξινόμηση πακέτων βάσει αποθετηρίου."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/patch.cc:24
 msgid "patch [OPTIONS]"
-msgstr ""
+msgstr "patch [ΕΠΙΛΟΓΕΣ]"
 
 #. translators: command summary: patch
 #: src/commands/patch.cc:26
@@ -3088,17 +3241,20 @@ msgstr "Εγκατάσταση απαιτούμενων διορθώσεων."
 #. translators: command description
 #: src/commands/patch.cc:28
 msgid "Install all available needed patches."
-msgstr ""
+msgstr "Εγκατάσταση όλων των διαθέσιμων απαιτούμενων διορθώσεων."
 
 #: src/commands/patch.cc:30
 msgid ""
 "When updating the affected/vulnerable packages described by a patch, zypper "
 "always aims for the latest available version."
 msgstr ""
+"Κατά την ενημέρωση των επηρεαζόμενων/ευάλωτων πακέτων που περιγράφονται από "
+"μια διόρθωση, το zypper στοχεύει πάντα στην τελευταία διαθέσιμη έκδοση."
 
 #: src/commands/patch.cc:50
 msgid "Skip needed patches which do not apply without conflict."
 msgstr ""
+"Παράλειψη των απαιτούμενων διορθώσεων που δεν εφαρμόζονται χωρίς διένεξη."
 
 #: src/commands/patch.cc:53
 msgid ""
@@ -3106,11 +3262,15 @@ msgid ""
 "is ignored, if the patch command must update the update stack first. Can not "
 "be combined with --updatestack-only."
 msgstr ""
+"Επιπλέον προσπάθεια ενημέρωσης όλων των πακέτων που δεν καλύπτονται από "
+"διορθώσεις. Η επιλογή αγνοείται εάν η εντολή patch πρέπει να ενημερώσει "
+"πρώτα τη στοίβα ενημερώσεων. Δεν μπορεί να συνδυαστεί με το --updatestack-"
+"only."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/patchcheck.cc:17
 msgid "patch-check (pchk) [OPTIONS]"
-msgstr ""
+msgstr "patch-check (pchk) [ΕΠΙΛΟΓΕΣ]"
 
 #. translators: command summary: patch-check, pchk
 #: src/commands/patchcheck.cc:19
@@ -3123,11 +3283,14 @@ msgid ""
 "Display stats about applicable patches. The command returns 100 if needed "
 "patches were found, 101 if there is at least one needed security patch."
 msgstr ""
+"Εμφάνιση στατιστικών για τις εφαρμόσιμες διορθώσεις. Η εντολή επιστρέφει 100 "
+"εάν βρέθηκαν απαιτούμενες διορθώσεις, 101 εάν υπάρχει τουλάχιστον μία "
+"απαιτούμενη διόρθωση ασφαλείας."
 
 #. translators: command synopsis; do not translate the command 'name (abbreviations)' or '-option' names
 #: src/commands/ps.cc:27
 msgid "ps [OPTIONS]"
-msgstr ""
+msgstr "ps [ΕΠΙΛΟΓΕΣ]"
 
 #. translators: command description
 #: src/commands/ps.cc:29
@@ -3135,6 +3298,8 @@ msgid ""
 "List running processes which might still use files and libraries deleted by "
 "recent upgrades."
 msgstr ""
+"Λίστα εκτελούμενων διεργασιών που ενδέχεται να χρησιμοποιούν ακόμα αρχεία "
+"και βιβλιοθήκες που διαγράφηκαν από πρόσφατες αναβαθμίσεις."
 
 #. translators: -s, --short
 #: src/commands/ps.cc:46
@@ -3143,6 +3308,10 @@ msgid ""
 "processes which are associated with a system service. Given three times, "
 "list the associated system service names only."
 msgstr ""
+"Δημιουργία ενός συνοπτικού πίνακα που δεν εμφανίζει τα διαγραμμένα αρχεία. "
+"Με διπλή χρήση, εμφάνιση μόνο διεργασιών που σχετίζονται με μια υπηρεσία "
+"συστήματος. Με τριπλή χρήση, εμφάνιση μόνο των ονομάτων των σχετιζόμενων "
+"υπηρεσιών συστήματος."
 
 #. translators: --print <format>
 #: src/commands/ps.cc:49
@@ -3152,11 +3321,14 @@ msgid ""
 "followed by a newline. Any '%s' directive in <format> is replaced by the "
 "system service name."
 msgstr ""
+"Για κάθε σχετιζόμενη υπηρεσία συστήματος, εκτύπωση της μορφής <format> στην "
+"τυπική έξοδο, ακολουθούμενη από μια νέα γραμμή. Κάθε οδηγία '%s' στο "
+"<format> αντικαθίσταται από το όνομα της υπηρεσίας συστήματος."
 
 #. translators: -d, --debugFile <path>
 #: src/commands/ps.cc:52
 msgid "Write debug output to file <path>."
-msgstr ""
+msgstr "Εγγραφή εξόδου αποσφαλμάτωσης στο αρχείο <path>."
 
 #: src/commands/ps.cc:72 src/solve-commit.cc:634
 msgid "Check failed:"
@@ -3238,7 +3410,7 @@ msgstr ""
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/query/info.cc:19
 msgid "info (if) [OPTIONS] <NAME>[-<VERSION>[-<RELEASE>]] ..."
-msgstr ""
+msgstr "info (if) [ΕΠΙΛΟΓΕΣ] <ΟΝΟΜΑ>[-<ΕΚΔΟΣΗ>[-<ΚΥΚΛΟΦΟΡΙΑ>]] ..."
 
 #. translators: command summary: info, if
 #: src/commands/query/info.cc:21
@@ -3264,6 +3436,9 @@ msgid ""
 "package is shown. Note that both the version and release numbers must always "
 "match exactly."
 msgstr ""
+"Εάν δεν καθοριστεί περιορισμός έκδοσης, εμφανίζονται πληροφορίες για το "
+"καλύτερο διαθέσιμο πακέτο. Σημειώστε ότι τόσο ο αριθμός έκδοσης όσο και ο "
+"αριθμός κυκλοφορίας πρέπει πάντα να ταιριάζουν ακριβώς."
 
 #. translators: -s, --match-substrings
 #: src/commands/query/info.cc:65
@@ -3298,7 +3473,7 @@ msgstr "Εμφάνιση συνιστώμενων."
 #. translators: --supplements
 #: src/commands/query/info.cc:90
 msgid "Show supplements."
-msgstr ""
+msgstr "Εμφάνιση συμπληρωμάτων."
 
 #. translators: --suggests
 #: src/commands/query/info.cc:94
@@ -3308,7 +3483,7 @@ msgstr "Εμφάνιση προτεινόμενων."
 #. translators: --enhances
 #: src/commands/query/info.cc:98
 msgid "Show enhances."
-msgstr ""
+msgstr "Εμφάνιση βελτιώσεων."
 
 #: src/commands/query/info.cc:112 src/utils/messages.cc:70
 msgid "Required argument missing."
@@ -3337,17 +3512,17 @@ msgstr "Εμφάνιση όλων των πληροφοριών για τα ορ
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/query/info.cc:164
 msgid "patch-info <PATCHNAME> ..."
-msgstr ""
+msgstr "patch-info <ΟΝΟΜΑ_ΔΙΟΡΘΩΣΗΣ> ..."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/query/info.cc:167
 msgid "pattern-info <PATTERN_NAME> ..."
-msgstr ""
+msgstr "pattern-info <ΟΝΟΜΑ_ΜΟΤΙΒΟΥ> ..."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/query/info.cc:170
 msgid "product-info <PRODUCT_NAME> ..."
-msgstr ""
+msgstr "product-info <ΟΝΟΜΑ_ΠΡΟΪΟΝΤΟΣ> ..."
 
 #. translators: command description
 #: src/commands/query/info.cc:182
@@ -3367,7 +3542,7 @@ msgstr "Εμφάνιση λεπτομερών πληροφοριών για τα
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/query/packages.cc:18
 msgid "packages (pa) [OPTIONS] [REPOSITORY] ..."
-msgstr ""
+msgstr "packages (pa) [ΕΠΙΛΟΓΕΣ] [ΑΠΟΘΕΤΗΡΙΟ] ..."
 
 #. translators: command summary: packages, pa
 #: src/commands/query/packages.cc:20
@@ -3384,16 +3559,18 @@ msgstr "Λίστα όλων των διαθέσιμων πακέτων στα ο
 msgid ""
 "Show installed packages which were automatically selected by the resolver."
 msgstr ""
+"Εμφάνιση εγκατεστημένων πακέτων που επιλέχθηκαν αυτόματα από τον επιλυτή."
 
 #. translators: --userinstalled
 #: src/commands/query/packages.cc:39
 msgid "Show installed packages which were explicitly selected by the user."
-msgstr ""
+msgstr "Εμφάνιση εγκατεστημένων πακέτων που επιλέχθηκαν ρητά από τον χρήστη."
 
 #. translators: --system
 #: src/commands/query/packages.cc:43
 msgid "Show installed packages which are not provided by any repository."
 msgstr ""
+"Εμφάνιση εγκατεστημένων πακέτων που δεν παρέχονται από κανένα αποθετήριο."
 
 #. translators: --orphaned
 #: src/commands/query/packages.cc:47
@@ -3401,6 +3578,8 @@ msgid ""
 "Show system packages which are orphaned (without repository and without "
 "update candidate)."
 msgstr ""
+"Εμφάνιση πακέτων συστήματος που είναι ορφανά (χωρίς αποθετήριο και χωρίς "
+"υποψήφια ενημέρωση)."
 
 #. translators: --suggested
 #: src/commands/query/packages.cc:51
@@ -3430,7 +3609,7 @@ msgstr "Ταξινόμηση λίστας ανά αποθετήριο."
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/query/patches.cc:18
 msgid "patches (pch) [REPOSITORY] ..."
-msgstr ""
+msgstr "patches (pch) [ΑΠΟΘΕΤΗΡΙΟ] ..."
 
 #. translators: command summary: patches, pch
 #: src/commands/query/patches.cc:20
@@ -3445,7 +3624,7 @@ msgstr "Λίστα με όλες τις διαθέσιμες διορθώσει�
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/query/patterns.cc:18
 msgid "patterns (pt) [OPTIONS] [REPOSITORY] ..."
-msgstr ""
+msgstr "patterns (pt) [ΕΠΙΛΟΓΕΣ] [ΑΠΟΘΕΤΗΡΙΟ] ..."
 
 #. translators: command summary: patterns, pt
 #: src/commands/query/patterns.cc:20
@@ -3460,7 +3639,7 @@ msgstr "Λίστα με όλα τα διαθέσιμα patterns στο καθο�
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/query/products.cc:18
 msgid "products (pd) [OPTIONS] [REPOSITORY] ..."
-msgstr ""
+msgstr "products (pd) [ΕΠΙΛΟΓΕΣ] [ΑΠΟΘΕΤΗΡΙΟ] ..."
 
 #. translators: command summary: products, pd
 #: src/commands/query/products.cc:20
@@ -3477,19 +3656,21 @@ msgstr "Λίστα με όλα τα διαθέσιμα προιόντα στο �
 msgid ""
 "XML output only: Literally forward the XML tags found in a product file."
 msgstr ""
+"Μόνο για έξοδο XML: Προώθηση των ετικετών XML που βρίσκονται σε ένα αρχείο "
+"προϊόντος ως έχουν."
 
 #: src/commands/query/products.cc:50
 #, boost-format
 msgid "Option %1% has no effect without the %2% global option."
-msgstr ""
+msgstr "Η επιλογή %1% δεν έχει αποτέλεσμα χωρίς την καθολική επιλογή %2%."
 
 #: src/commands/repos/add.cc:23
 msgid "addrepo (ar) [OPTIONS] <URI> <ALIAS>"
-msgstr ""
+msgstr "addrepo (ar) [ΕΠΙΛΟΓΕΣ] <URI> <ΨΕΥΔΩΝΥΜΟ>"
 
 #: src/commands/repos/add.cc:23
 msgid "addrepo (ar) [OPTIONS] <FILE.repo>"
-msgstr ""
+msgstr "addrepo (ar) [ΕΠΙΛΟΓΕΣ] <ΑΡΧΕΙΟ.repo>"
 
 #: src/commands/repos/add.cc:24
 msgid "Add a new repository."
@@ -3500,22 +3681,26 @@ msgid ""
 "Add a repository to the system. The repository can be specified by its URI "
 "or can be read from specified .repo file (even remote)."
 msgstr ""
+"Προσθήκη ενός αποθετηρίου στο σύστημα. Το αποθετήριο μπορεί να καθοριστεί "
+"από το URI του ή να αναγνωσθεί από καθορισμένο αρχείο .repo (ακόμη και "
+"απομακρυσμένο)."
 
 #: src/commands/repos/add.cc:40
 msgid "Just another means to specify a .repo file to read."
-msgstr ""
+msgstr "Απλώς ένας άλλος τρόπος καθορισμού ενός αρχείου .repo προς ανάγνωση."
 
 #: src/commands/repos/add.cc:41
 msgid "Probe URI."
-msgstr ""
+msgstr "Έλεγχος (probe) URI."
 
 #: src/commands/repos/add.cc:42
 msgid "Don't probe URI, probe later during refresh."
-msgstr ""
+msgstr "Να μην γίνει έλεγχος του URI τώρα, αλλά αργότερα κατά την ανανέωση."
 
 #: src/commands/repos/add.cc:46
 msgid "The repository type is always autodetected. This option is ignored."
 msgstr ""
+"Ο τύπος του αποθετηρίου ανιχνεύεται πάντα αυτόματα. Αυτή η επιλογή αγνοείται."
 
 #: src/commands/repos/add.cc:71
 #, c-format, boost-format
@@ -3544,7 +3729,7 @@ msgstr ""
 
 #: src/commands/repos/clean.cc:16
 msgid "clean (cc) [ALIAS|#|URI] ..."
-msgstr ""
+msgstr "clean (cc) [ΨΕΥΔΩΝΥΜΟ|#|URI] ..."
 
 #: src/commands/repos/clean.cc:17 src/commands/repos/clean.cc:18
 msgid "Clean local caches."
@@ -3640,12 +3825,11 @@ msgstr "Γονική υπηρεσία"
 
 #: src/commands/repos/list.cc:67
 msgid "Keywords"
-msgstr ""
+msgstr "Λέξεις-κλειδιά"
 
 #: src/commands/repos/list.cc:68
-#, fuzzy
 msgid "Repo Info Path"
-msgstr "Διαδρομή Πληροφοριών Αποθετηρίου"
+msgstr "Διαδρομή πληροφοριών αποθετηρίου"
 
 #: src/commands/repos/list.cc:69
 msgid "MD Cache Path"
@@ -3653,7 +3837,7 @@ msgstr "Διαδρομή Λανθάνουσας Μνήμης MD"
 
 #: src/commands/repos/list.cc:85
 msgid "repos (lr) [OPTIONS] [REPO] ..."
-msgstr ""
+msgstr "repos (lr) [ΕΠΙΛΟΓΕΣ] [ΑΠΟΘΕΤΗΡΙΟ] ..."
 
 #: src/commands/repos/list.cc:86 src/commands/repos/list.cc:87
 msgid "List all defined repositories."
@@ -3692,7 +3876,7 @@ msgstr "Ανανέωση"
 #. translators: 'zypper repos' column - whether keep-packages is enabled for the repository
 #: src/commands/repos/list.cc:266
 msgid "Keep"
-msgstr ""
+msgstr "Διατήρηση"
 
 #: src/commands/repos/list.cc:357
 msgid "No repositories defined."
@@ -3707,13 +3891,13 @@ msgstr ""
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/repos/modify.cc:24
 msgid "modifyrepo (mr) <OPTIONS> <ALIAS|#|URI>"
-msgstr ""
+msgstr "modifyrepo (mr) <ΕΠΙΛΟΓΕΣ> <ΨΕΥΔΩΝΥΜΟ|#|URI>"
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/repos/modify.cc:26
 #, boost-format
 msgid "modifyrepo (mr) <OPTIONS> <%1%>"
-msgstr ""
+msgstr "modifyrepo (mr) <ΕΠΙΛΟΓΕΣ> <%1%>"
 
 #. translators: command summary
 #: src/commands/repos/modify.cc:29
@@ -3727,6 +3911,8 @@ msgid ""
 "Modify properties of repositories specified by alias, number, or URI, or by "
 "the '%1%' aggregate options."
 msgstr ""
+"Τροποποίηση των ιδιοτήτων των αποθετηρίων που καθορίζονται από το ψευδώνυμο, "
+"τον αριθμό ή το URI, ή από τις συγκεντρωτικές επιλογές '%1%'."
 
 #: src/commands/repos/modify.cc:89
 #, c-format, boost-format
@@ -3735,7 +3921,7 @@ msgstr "Το αποθετήριο %s δεν βρέθηκε."
 
 #: src/commands/repos/refresh.cc:55
 msgid "refresh (ref) [ALIAS|#|URI] ..."
-msgstr ""
+msgstr "refresh (ref) [ΨΕΥΔΩΝΥΜΟ|#|URI] ..."
 
 #. translators: command summary: refresh, ref
 #: src/commands/repos/refresh.cc:57
@@ -3784,6 +3970,9 @@ msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
 msgstr ""
+"Αποθετήρια πολλαπλών αρχιτεκτονικών: Λήψη ακατέργαστων μεταδεδομένων για "
+"όλες τις προσφερόμενες αρχιτεκτονικές, ακόμη και αν το αποθετήριο "
+"υποστηρίζει φιλτράρισμα."
 
 #. translators: -r, --repo <ALIAS|#|URI>
 #: src/commands/repos/refresh.cc:110
@@ -3810,9 +3999,9 @@ msgid "Specified repositories: "
 msgstr "Ορισμένα αποθετήρια: "
 
 #: src/commands/repos/refresh.cc:262
-#, fuzzy, c-format, boost-format
+#, boost-format, c-format
 msgid "Refreshing repository '%s'."
-msgstr "Απενεργοποίηση αποθετηρίου '%s'."
+msgstr "Ανανέωση αποθετηρίου '%s'."
 
 #: src/commands/repos/refresh.cc:280 src/repos.cc:836
 #, c-format, boost-format
@@ -3830,10 +4019,9 @@ msgid "Skipping repository '%s' because of the above error."
 msgstr "Παράβλεψη του αποθετηρίου '%s' λόγω του παραπάνω σφάλματος."
 
 #: src/commands/repos/refresh.cc:318
-#, fuzzy
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
-msgstr "Κάποια από τα αποθετήρια δεν ανανεώθηκαν λόγω ενός σφάλματος."
+msgstr "Ορισμένα από τα αποθετήρια δεν ανανεώθηκαν επειδή δεν ήταν γνωστά."
 
 #: src/commands/repos/refresh.cc:325
 msgid "Specified repositories are not enabled or defined."
@@ -3868,7 +4056,7 @@ msgstr "Όλα τα αποθετήρια έχουν ανανεωθεί."
 
 #: src/commands/repos/remove.cc:21
 msgid "removerepo (rr) [OPTIONS] <ALIAS|#|URI>"
-msgstr ""
+msgstr "removerepo (rr) [ΕΠΙΛΟΓΕΣ] <ΨΕΥΔΩΝΥΜΟ|#|URI>"
 
 #: src/commands/repos/remove.cc:22
 msgid "Remove specified repository."
@@ -3929,7 +4117,7 @@ msgstr "Το αποθετήριο '%s' μένει αμετάβλητο."
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/repos/rename.cc:64
 msgid "renamerepo (nr) [OPTIONS] <ALIAS|#|URI> <NEW-ALIAS>"
-msgstr ""
+msgstr "renamerepo (nr) [ΕΠΙΛΟΓΕΣ] <ALIAS|#|URI> <ΝΕΟ-ALIAS>"
 
 #: src/commands/repos/rename.cc:65
 msgid "Rename specified repository."
@@ -3963,47 +4151,47 @@ msgstr ""
 
 #: src/commands/reposerviceoptionsets.cc:72
 msgid "Set a descriptive name for the service."
-msgstr ""
+msgstr "Ορισμός ενός περιγραφικού ονόματος για την υπηρεσία."
 
 #: src/commands/reposerviceoptionsets.cc:72
 msgid "Set a descriptive name for the repository."
-msgstr ""
+msgstr "Ορισμός ενός περιγραφικού ονόματος για το αποθετήριο."
 
 #: src/commands/reposerviceoptionsets.cc:75
 msgid "Enable a disabled service."
-msgstr ""
+msgstr "Ενεργοποίηση μιας απενεργοποιημένης υπηρεσίας."
 
 #: src/commands/reposerviceoptionsets.cc:75
 msgid "Enable a disabled repository."
-msgstr ""
+msgstr "Ενεργοποίηση ενός απενεργοποιημένου αποθετηρίου."
 
 #: src/commands/reposerviceoptionsets.cc:78
 msgid "Disable the service (but don't remove it)."
-msgstr ""
+msgstr "Απενεργοποίηση της υπηρεσίας (αλλά χωρίς αφαίρεσή της)."
 
 #: src/commands/reposerviceoptionsets.cc:78
 msgid "Disable the repository (but don't remove it)."
-msgstr ""
+msgstr "Απενεργοποίηση του αποθετηρίου (αλλά χωρίς αφαίρεσή του)."
 
 #: src/commands/reposerviceoptionsets.cc:81
 msgid "Enable auto-refresh of the service."
-msgstr ""
+msgstr "Ενεργοποίηση αυτόματης ανανέωσης της υπηρεσίας."
 
 #: src/commands/reposerviceoptionsets.cc:81
 msgid "Enable auto-refresh of the repository."
-msgstr ""
+msgstr "Ενεργοποίηση αυτόματης ανανέωσης του αποθετηρίου."
 
 #: src/commands/reposerviceoptionsets.cc:84
 msgid "Disable auto-refresh of the service."
-msgstr ""
+msgstr "Απενεργοποίηση αυτόματης ανανέωσης της υπηρεσίας."
 
 #: src/commands/reposerviceoptionsets.cc:84
 msgid "Disable auto-refresh of the repository."
-msgstr ""
+msgstr "Απενεργοποίηση αυτόματης ανανέωσης του αποθετηρίου."
 
 #: src/commands/reposerviceoptionsets.cc:111
 msgid "Apply changes to all services."
-msgstr ""
+msgstr "Εφαρμογή αλλαγών σε όλες τις υπηρεσίες."
 
 #: src/commands/reposerviceoptionsets.cc:111
 msgid "Apply changes to all repositories."
@@ -4011,7 +4199,7 @@ msgstr "Εφαρμογή αλλαγών σε όλα τα αποθετήρια."
 
 #: src/commands/reposerviceoptionsets.cc:114
 msgid "Apply changes to all local services."
-msgstr ""
+msgstr "Εφαρμογή αλλαγών σε όλες τις τοπικές υπηρεσίες."
 
 #: src/commands/reposerviceoptionsets.cc:114
 msgid "Apply changes to all local repositories."
@@ -4019,7 +4207,7 @@ msgstr "Εφαρμογή αλλαγών σε όλα τα τοπικά αποθε
 
 #: src/commands/reposerviceoptionsets.cc:117
 msgid "Apply changes to all remote services."
-msgstr ""
+msgstr "Εφαρμογή αλλαγών σε όλες τις απομακρυσμένες υπηρεσίες."
 
 #: src/commands/reposerviceoptionsets.cc:117
 msgid "Apply changes to all remote repositories."
@@ -4027,7 +4215,7 @@ msgstr "Εφαρμογή αλλαγών σε όλα τα απομακρυσμέ�
 
 #: src/commands/reposerviceoptionsets.cc:120
 msgid "Apply changes to services of specified type."
-msgstr ""
+msgstr "Εφαρμογή αλλαγών σε υπηρεσίες καθορισμένου τύπου."
 
 #: src/commands/reposerviceoptionsets.cc:120
 msgid "Apply changes to repositories of specified type."
@@ -4035,40 +4223,41 @@ msgstr "Εφαρμογή αλλαγών στα αποθετήρια καθορι
 
 #: src/commands/reposerviceoptionsets.cc:137
 msgid "Set priority of the repository."
-msgstr ""
+msgstr "Ορισμός προτεραιότητας του αποθετηρίου."
 
 #: src/commands/reposerviceoptionsets.cc:138
 msgid "Enable RPM files caching."
-msgstr ""
+msgstr "Ενεργοποίηση προσωρινής αποθήκευσης (caching) αρχείων RPM."
 
 #: src/commands/reposerviceoptionsets.cc:139
 msgid "Disable RPM files caching."
-msgstr ""
+msgstr "Απενεργοποίηση προσωρινής αποθήκευσης (caching) αρχείων RPM."
 
 #: src/commands/reposerviceoptionsets.cc:140
 msgid "Enable GPG check for this repository."
 msgstr "Ενεργοποίηση ελέγχου GPG γι' αυτό το αποθετήριο."
 
 #: src/commands/reposerviceoptionsets.cc:141
-#, fuzzy
 msgid "Enable strict GPG check for this repository."
-msgstr "Ενεργοποίηση ελέγχου GPG γι' αυτό το αποθετήριο."
+msgstr "Ενεργοποίηση αυστηρού ελέγχου GPG για αυτό το αποθετήριο."
 
 #: src/commands/reposerviceoptionsets.cc:142
-#, fuzzy, boost-format
+#, boost-format
 msgid "Short hand for '%1%'."
-msgstr "Καμία υποψήφια ενημέρωση για το '%s'."
+msgstr "Συντόμευση για το '%1%'."
 
 #: src/commands/reposerviceoptionsets.cc:143
-#, fuzzy
 msgid "Enable GPG check but allow the repository metadata to be unsigned."
-msgstr "Ενεργοποίηση ελέγχου GPG γι' αυτό το αποθετήριο."
+msgstr ""
+"Ενεργοποίηση ελέγχου GPG αλλά με αποδοχή ανυπόγραφων μεταδεδομένων "
+"αποθετηρίου."
 
 #: src/commands/reposerviceoptionsets.cc:144
-#, fuzzy
 msgid ""
 "Enable GPG check but allow installing unsigned packages from this repository."
-msgstr "Ενεργοποίηση ελέγχου GPG γι' αυτό το αποθετήριο."
+msgstr ""
+"Ενεργοποίηση ελέγχου GPG αλλά με αποδοχή εγκατάστασης ανυπόγραφων πακέτων "
+"από αυτό το αποθετήριο."
 
 #: src/commands/reposerviceoptionsets.cc:145
 msgid "Disable GPG check for this repository."
@@ -4079,6 +4268,8 @@ msgid ""
 "Use the global GPG check setting defined in /etc/zypp/zypp.conf. This is the "
 "default."
 msgstr ""
+"Χρήση της καθολικής ρύθμισης ελέγχου GPG που ορίζεται στο /etc/zypp/"
+"zypp.conf. Αυτή είναι η προεπιλογή."
 
 #. translators: -a, --alias
 #: src/commands/reposerviceoptionsets.cc:182
@@ -4098,7 +4289,7 @@ msgstr "Εμφάνιση σημείωσης αυτόματης ανανέωση�
 #. translators: -k, --keep-packages
 #: src/commands/reposerviceoptionsets.cc:191
 msgid "Show also the keep-packages flag."
-msgstr ""
+msgstr "Εμφάνιση και της σήμανσης διατήρησης πακέτων (keep-packages)."
 
 #. translators: -u, --uri
 #: src/commands/reposerviceoptionsets.cc:201
@@ -4153,6 +4344,8 @@ msgid ""
 "For an extended search including not yet activated remote resources please "
 "use '%1%'."
 msgstr ""
+"Για μια εκτεταμένη αναζήτηση που περιλαμβάνει μη ενεργοποιημένους "
+"απομακρυσμένους πόρους, παρακαλώ χρησιμοποιήστε το '%1%'."
 
 #. translator: %1% denotes a zypper command to execute. Like 'zypper search-packages'.
 #: src/commands/search/search-packages-hinthack.cc:74
@@ -4161,6 +4354,8 @@ msgid ""
 "The package providing this subcommand is currently not installed. You can "
 "install it by calling '%1%'."
 msgstr ""
+"Το πακέτο που παρέχει αυτή την υποεντολή δεν είναι εγκατεστημένο. Μπορείτε "
+"να το εγκαταστήσετε καλώντας το '%1%'."
 
 #: src/commands/search/search-packages-hinthack.cc:87
 #, boost-format
@@ -4168,16 +4363,20 @@ msgid ""
 "For an extended search including not yet activated remote resources you may "
 "run '%1%' at any time."
 msgstr ""
+"Για μια εκτεταμένη αναζήτηση που περιλαμβάνει μη ενεργοποιημένους "
+"απομακρυσμένους πόρους, μπορείτε να εκτελέσετε το '%1%' οποιαδήποτε στιγμή."
 
 #: src/commands/search/search-packages-hinthack.cc:88
 #, boost-format
 msgid "Do you want to run '%1%' now?"
-msgstr ""
+msgstr "Θέλετε να εκτελέσετε το '%1%' τώρα;"
 
 #: src/commands/search/search-packages-hinthack.cc:104
 #, boost-format
 msgid "Run '%1%' to search in not yet activated remote resources."
 msgstr ""
+"Εκτελέστε το '%1%' για αναζήτηση σε μη ενεργοποιημένους απομακρυσμένους "
+"πόρους."
 
 #. translators: command summary: search, se
 #: src/commands/search/search.cc:76
@@ -4187,12 +4386,14 @@ msgstr "Αναζήτηση για πακέτα που ταιριάζουν σε 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/search/search.cc:83
 msgid "search (se) [OPTIONS] [QUERYSTRING] ..."
-msgstr ""
+msgstr "search (se) [ΕΠΙΛΟΓΕΣ] [QUERYSTRING] ..."
 
 #. translators: command description
 #: src/commands/search/search.cc:91
 msgid "Search for packages matching any of the given search strings."
 msgstr ""
+"Αναζήτηση πακέτων που ταιριάζουν με οποιαδήποτε από τις δοθείσες "
+"συμβολοσειρές."
 
 #. translators: command description
 #: src/commands/search/search.cc:93
@@ -4200,61 +4401,64 @@ msgid ""
 "* and ? wildcards can also be used within search strings. If a search string "
 "is enclosed in '/', it's interpreted as a regular expression."
 msgstr ""
+"Οι χαρακτήρες μπαλαντέρ * και ? μπορούν επίσης να χρησιμοποιηθούν. Εάν μια "
+"συμβολοσειρά περιβάλλεται από '/', ερμηνεύεται ως κανονική έκφραση (regex)."
 
 #. translators: --match-substrings
 #: src/commands/search/search.cc:105
 msgid "Search for a match to partial words (default)."
-msgstr ""
+msgstr "Αναζήτηση για αντιστοίχιση σε τμήματα λέξεων (προεπιλογή)."
 
 #. translators: --match-words
 #: src/commands/search/search.cc:109
 msgid "Search for a match to whole words only."
-msgstr ""
+msgstr "Αναζήτηση για αντιστοίχιση μόνο σε ολόκληρες λέξεις."
 
 #. translators: -x, --match-exact
 #: src/commands/search/search.cc:113
 msgid "Searches for an exact match of the search strings."
-msgstr ""
+msgstr "Αναζήτηση για ακριβή αντιστοίχιση των συμβολοσειρών."
 
 #. translators: --provides
 #: src/commands/search/search.cc:117
 msgid "Search for packages which provide the search strings."
-msgstr ""
+msgstr "Αναζήτηση πακέτων που παρέχουν τις συμβολοσειρές αναζήτησης."
 
 #. translators: --requires
 #: src/commands/search/search.cc:121
 msgid "Search for packages which require the search strings."
-msgstr ""
+msgstr "Αναζήτηση πακέτων που απαιτούν τις συμβολοσειρές αναζήτησης."
 
 #. translators: --recommends
 #: src/commands/search/search.cc:125
 msgid "Search for packages which recommend the search strings."
-msgstr ""
+msgstr "Αναζήτηση πακέτων που συνιστούν τις συμβολοσειρές αναζήτησης."
 
 #. translators: --supplements
 #: src/commands/search/search.cc:129
 msgid "Search for packages which supplement the search strings."
-msgstr ""
+msgstr "Αναζήτηση πακέτων που συμπληρώνουν τις συμβολοσειρές αναζήτησης."
 
 #. translators: --conflicts
 #: src/commands/search/search.cc:133
 msgid "Search packages conflicting with search strings."
-msgstr ""
+msgstr "Αναζήτηση πακέτων που συγκρούονται με τις συμβολοσειρές αναζήτησης."
 
 #. translators: --obsoletes
 #: src/commands/search/search.cc:137
 msgid "Search for packages which obsolete the search strings."
 msgstr ""
+"Αναζήτηση πακέτων που καθιστούν παρωχημένες τις συμβολοσειρές αναζήτησης."
 
 #. translators: --suggests
 #: src/commands/search/search.cc:141
 msgid "Search for packages which suggest the search strings."
-msgstr ""
+msgstr "Αναζήτηση πακέτων που προτείνουν τις συμβολοσειρές αναζήτησης."
 
 #. translators: --enhances
 #: src/commands/search/search.cc:145
 msgid "Search for packages which enhance the search strings."
-msgstr ""
+msgstr "Αναζήτηση πακέτων που βελτιώνουν τις συμβολοσειρές αναζήτησης."
 
 #. translators: --provides-pkg
 #: src/commands/search/search.cc:149
@@ -4262,6 +4466,8 @@ msgid ""
 "Search for all packages that provide any of the provides of the package(s) "
 "matched by the input parameters."
 msgstr ""
+"Αναζήτηση όλων των πακέτων που προσφέρουν οποιαδήποτε από τις παροχές των "
+"πακέτων που αντιστοιχούν στις παραμέτρους εισόδου."
 
 #. translators: --requires-pkg
 #: src/commands/search/search.cc:153
@@ -4269,6 +4475,8 @@ msgid ""
 "Search for all packages that require any of the provides of the package(s) "
 "matched by the input parameters."
 msgstr ""
+"Αναζήτηση όλων των πακέτων που απαιτούν οποιαδήποτε από τις παροχές των "
+"πακέτων που αντιστοιχούν στις παραμέτρους εισόδου."
 
 #. translators: --recommends-pkg
 #: src/commands/search/search.cc:157
@@ -4276,6 +4484,8 @@ msgid ""
 "Search for all packages that recommend any of the provides of the package(s) "
 "matched by the input parameters."
 msgstr ""
+"Αναζήτηση όλων των πακέτων που συνιστούν οποιαδήποτε από τις παροχές των "
+"πακέτων που αντιστοιχούν στις παραμέτρους εισόδου."
 
 #. translators: --supplements-pkg
 #: src/commands/search/search.cc:161
@@ -4283,6 +4493,8 @@ msgid ""
 "Search for all packages that supplement any of the provides of the "
 "package(s) matched by the input parameters."
 msgstr ""
+"Αναζήτηση όλων των πακέτων που συμπληρώνουν οποιαδήποτε από τις παροχές των "
+"πακέτων που αντιστοιχούν στις παραμέτρους εισόδου."
 
 #. translators: --conflicts-pkg
 #: src/commands/search/search.cc:165
@@ -4290,6 +4502,8 @@ msgid ""
 "Search for all packages that conflict with any of the package(s) matched by "
 "the input parameters."
 msgstr ""
+"Αναζήτηση όλων των πακέτων που συγκρούονται με οποιοδήποτε από τα πακέτα που "
+"αντιστοιχούν στις παραμέτρους εισόδου."
 
 #. translators: --obsoletes-pkg
 #: src/commands/search/search.cc:169
@@ -4297,6 +4511,8 @@ msgid ""
 "Search for all packages that obsolete any of the package(s) matched by the "
 "input parameters."
 msgstr ""
+"Αναζήτηση όλων των πακέτων που καθιστούν παρωχημένο οποιοδήποτε από τα "
+"πακέτα που αντιστοιχούν στις παραμέτρους εισόδου."
 
 #. translators: --suggests-pkg
 #: src/commands/search/search.cc:173
@@ -4304,6 +4520,8 @@ msgid ""
 "Search for all packages that suggest any of the provides of the package(s) "
 "matched by the input parameters."
 msgstr ""
+"Αναζήτηση όλων των πακέτων που προτείνουν οποιαδήποτε από τις παροχές των "
+"πακέτων που αντιστοιχούν στις παραμέτρους εισόδου."
 
 #. translators: --enhances-pkg
 #: src/commands/search/search.cc:177
@@ -4311,11 +4529,13 @@ msgid ""
 "Search for all packages that enhance any of the provides of the package(s) "
 "matched by the input parameters."
 msgstr ""
+"Αναζήτηση όλων των πακέτων που βελτιώνουν οποιαδήποτε από τις παροχές των "
+"πακέτων που αντιστοιχούν στις παραμέτρους εισόδου."
 
 #. translators: -t, --type <TYPE>
 #: src/commands/search/search.cc:181
 msgid "Search only for packages of the specified type."
-msgstr ""
+msgstr "Αναζήτηση μόνο για πακέτα του καθορισμένου τύπου."
 
 #. translators: -n, --name
 #: src/commands/search/search.cc:185
@@ -4323,26 +4543,29 @@ msgid ""
 "Useful together with dependency options, otherwise searching in package name "
 "is default."
 msgstr ""
+"Χρήσιμο σε συνδυασμό με επιλογές εξαρτήσεων, αλλιώς η αναζήτηση στο όνομα "
+"του πακέτου είναι η προεπιλογή."
 
 #. translators: -f, --file-list
 #: src/commands/search/search.cc:189
 msgid "Search for a match in the file list of packages."
-msgstr ""
+msgstr "Αναζήτηση για αντιστοίχιση στη λίστα αρχείων των πακέτων."
 
 #. translators: -d, --search-descriptions
 #: src/commands/search/search.cc:193
 msgid "Search also in package summaries and descriptions."
-msgstr ""
+msgstr "Αναζήτηση επίσης σε περιλήψεις και περιγραφές πακέτων."
 
 #. translators: -C, --case-sensitive
 #: src/commands/search/search.cc:197
 msgid "Perform case-sensitive search."
-msgstr ""
+msgstr "Εκτέλεση αναζήτησης με διάκριση πεζών-κεφαλαίων."
 
 #. translators: -s, --details
 #: src/commands/search/search.cc:201
 msgid "Show each available version in each repository on a separate line."
 msgstr ""
+"Εμφάνιση κάθε διαθέσιμης έκδοσης σε κάθε αποθετήριο σε ξεχωριστή γραμμή."
 
 #. translators: -v, --verbose
 #: src/commands/search/search.cc:205
@@ -4350,6 +4573,8 @@ msgid ""
 "Like --details, with additional information where the search has matched "
 "(useful for search in dependencies)."
 msgstr ""
+"Όπως το --details, με πρόσθετες πληροφορίες για το πού βρέθηκε η "
+"αντιστοίχιση (χρήσιμο για αναζήτηση σε εξαρτήσεις)."
 
 #: src/commands/search/search.cc:298 src/repos.cc:773
 #, c-format, boost-format
@@ -4358,9 +4583,8 @@ msgstr "Το καθορισμένο αποθετήριο '%s' είναι απε�
 
 #. translators: empty search result message
 #: src/commands/search/search.cc:471 src/info.cc:366
-#, fuzzy
 msgid "No matching items found."
-msgstr "Δεν βρέθηκαν ζητήματα που να ταιριάζουν."
+msgstr "Δεν βρέθηκαν στοιχεία που να ταιριάζουν."
 
 #: src/commands/search/search.cc:503
 msgid "Problem occurred initializing or executing the search query"
@@ -4380,39 +4604,43 @@ msgstr ""
 #. translators: -g, --category <CATEGORY>
 #: src/commands/selectpatchoptionset.cc:24
 msgid "Select patches with the specified category."
-msgstr ""
+msgstr "Επιλογή διορθώσεων (patches) της καθορισμένης κατηγορίας."
 
 #. translators: --severity <SEVERITY>
 #: src/commands/selectpatchoptionset.cc:28
 msgid "Select patches with the specified severity."
-msgstr ""
+msgstr "Επιλογή διορθώσεων (patches) της καθορισμένης κρισιμότητας."
 
 #. translators: --date <YYYY-MM-DD>
 #: src/commands/selectpatchoptionset.cc:32
 msgid "Select patches issued up to, but not including, the specified date"
 msgstr ""
+"Επιλογή διορθώσεων που εκδόθηκαν έως, αλλά χωρίς να περιλαμβάνουν, την "
+"καθορισμένη ημερομηνία."
 
 #. translators: -b, --bugzilla
 #: src/commands/selectpatchoptionset.cc:36
 msgid "Select applicable patches for the specified Bugzilla issues."
-msgstr ""
+msgstr "Επιλογή εφαρμόσιμων διορθώσεων για τα συγκεκριμένα θέματα Bugzilla."
 
 #. translators: --cve
 #: src/commands/selectpatchoptionset.cc:41
 msgid "Select applicable patches for the specified CVE issues."
-msgstr ""
+msgstr "Επιλογή εφαρμόσιμων διορθώσεων για τα συγκεκριμένα θέματα CVE."
 
 #. any
 #. translators: --cve
 #: src/commands/selectpatchoptionset.cc:50
 msgid "Select issues matching the specified string."
-msgstr ""
+msgstr "Επιλογή θεμάτων που ταιριάζουν με τη συγκεκριμένη συμβολοσειρά."
 
 #: src/commands/services/add.cc:53
 #, boost-format
 msgid ""
 "Service '%1%' with URL '%2%' already exists. Just updating the settings."
 msgstr ""
+"Η υπηρεσία '%1%' με URL '%2%' υπάρχει ήδη. Γίνεται απλή ενημέρωση των "
+"ρυθμίσεων."
 
 #: src/commands/services/add.cc:71
 #, boost-format
@@ -4420,6 +4648,8 @@ msgid ""
 "Service '%1%' already exists but uses a different URL '%2%'. Please use "
 "another alias."
 msgstr ""
+"Η υπηρεσία '%1%' υπάρχει ήδη αλλά χρησιμοποιεί διαφορετικό URL '%2%'. "
+"Παρακαλώ χρησιμοποιήστε άλλο ψευδώνυμο."
 
 #: src/commands/services/add.cc:83
 #, c-format, boost-format
@@ -4434,7 +4664,7 @@ msgstr "Η υπηρεσία '%s' προστέθηκε επιτυχώς."
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/services/add.cc:137
 msgid "addservice (as) [OPTIONS] <URI> <ALIAS>"
-msgstr ""
+msgstr "addservice (as) [ΕΠΙΛΟΓΕΣ] <URI> <ALIAS>"
 
 #: src/commands/services/add.cc:138
 msgid "Add a new service."
@@ -4442,11 +4672,11 @@ msgstr "Προσθήκη μιας νέας υπηρεσίας."
 
 #: src/commands/services/add.cc:139
 msgid "Add a repository index service to the system."
-msgstr ""
+msgstr "Προσθήκη μιας υπηρεσίας ευρετηρίου αποθετηρίου στο σύστημα."
 
 #: src/commands/services/add.cc:153
 msgid "The type of service is always autodetected. This option is ignored."
-msgstr ""
+msgstr "Ο τύπος υπηρεσίας ανιχνεύεται πάντα αυτόματα. Αυτή η επιλογή αγνοείται."
 
 #: src/commands/services/common.cc:37
 msgid "Error reading services:"
@@ -4497,15 +4727,15 @@ msgstr "Η υπηρεσία '%s' έχει αφαιρεθεί."
 
 #: src/commands/services/list.cc:94
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/commands/services/list.cc:95
 msgid "Config"
-msgstr ""
+msgstr "Ρύθμιση (Config)"
 
 #: src/commands/services/list.cc:137
 msgid "services (ls) [OPTIONS] [SERVICE] ..."
-msgstr ""
+msgstr "services (ls) [ΕΠΙΛΟΓΕΣ] [ΥΠΗΡΕΣΙΑ] ..."
 
 #: src/commands/services/list.cc:138
 msgid "List all defined services."
@@ -4525,13 +4755,13 @@ msgstr ""
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/services/modify.cc:18
 msgid "modifyservice (ms) <OPTIONS> <ALIAS|#|URI>"
-msgstr ""
+msgstr "modifyservice (ms) <ΕΠΙΛΟΓΕΣ> <ALIAS|#|URI>"
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/services/modify.cc:20
 #, boost-format
 msgid "modifyservice (ms) <OPTIONS> <%1%>"
-msgstr ""
+msgstr "modifyservice (ms) <ΕΠΙΛΟΓΕΣ> <%1%>"
 
 #: src/commands/services/modify.cc:22
 msgid "Modify specified service."
@@ -4543,34 +4773,36 @@ msgid ""
 "Modify properties of services specified by alias, number, or URI, or by the "
 "'%1%' aggregate options."
 msgstr ""
+"Τροποποίηση ιδιοτήτων των υπηρεσιών που καθορίζονται από ψευδώνυμο, αριθμό, "
+"ή URI, ή από τις συνολικές επιλογές '%1%'."
 
 #: src/commands/services/modify.cc:41
 msgid "Advanced:"
-msgstr ""
+msgstr "Για προχωρημένους:"
 
 #: src/commands/services/modify.cc:43
 msgid "Add a RIS service repository to enable."
-msgstr ""
+msgstr "Προσθήκη ενός αποθετηρίου υπηρεσίας RIS για ενεργοποίηση."
 
 #: src/commands/services/modify.cc:44
 msgid "Add a RIS service repository to disable."
-msgstr ""
+msgstr "Προσθήκη ενός αποθετηρίου υπηρεσίας RIS για απενεργοποίηση."
 
 #: src/commands/services/modify.cc:45
 msgid "Remove a RIS service repository to enable."
-msgstr ""
+msgstr "Αφαίρεση ενός αποθετηρίου υπηρεσίας RIS από τη λίστα ενεργοποίησης."
 
 #: src/commands/services/modify.cc:46
 msgid "Remove a RIS service repository to disable."
-msgstr ""
+msgstr "Αφαίρεση ενός αποθετηρίου υπηρεσίας RIS από τη λίστα απενεργοποίησης."
 
 #: src/commands/services/modify.cc:47
 msgid "Clear the list of RIS repositories to enable."
-msgstr ""
+msgstr "Εκκαθάριση της λίστας αποθετηρίων RIS για ενεργοποίηση."
 
 #: src/commands/services/modify.cc:48
 msgid "Clear the list of RIS repositories to disable."
-msgstr ""
+msgstr "Εκκαθάριση της λίστας αποθετηρίων RIS για απενεργοποίηση."
 
 #. translators: aggregate option is e.g. "--all". This message will be
 #. followed by ms command help text which will explain it
@@ -4802,7 +5034,6 @@ msgid "Do not install recommended packages, only required ones."
 msgstr ""
 
 #: src/commands/solveroptionset.cc:61
-#, fuzzy
 msgid "Create a solver test case for debugging."
 msgstr "Σφάλμα κατά τη δημιουργία δοκιμαστικής επίλυσης."
 
@@ -5536,7 +5767,6 @@ msgid "Interactive"
 msgstr "Διαδραστικός"
 
 #: src/info.cc:557
-#, fuzzy
 msgid "Required"
 msgstr "Απαιτεί"
 
@@ -5823,7 +6053,7 @@ msgstr "άστατο"
 
 #. translators: 'Volatile' refers to changes we previously tagged as 'XYZ changed to SOMETHING [volatile]'
 #: src/repos.cc:59
-#, fuzzy, boost-format
+#, boost-format
 msgid ""
 "Repo '%1%' is managed by service '%2%'. Volatile changes are reset by the "
 "next service refresh!"
@@ -5836,7 +6066,6 @@ msgid "default priority"
 msgstr ""
 
 #: src/repos.cc:76
-#, fuzzy
 msgid "raised priority"
 msgstr "Προτεραιότητα"
 
@@ -5855,17 +6084,16 @@ msgid ""
 msgstr ""
 
 #: src/repos.cc:184
-#, fuzzy
 msgid "Repository priorities in effect:"
 msgstr "Η προτεραιότητα του αποθετηρίου '%s' έχει οριστεί στο %d."
 
 #: src/repos.cc:185
-#, fuzzy, boost-format
+#, boost-format
 msgid "See '%1%' for details"
 msgstr "Επιλογή του '%s' για αφαίρεση."
 
 #: src/repos.cc:194
-#, fuzzy, boost-format
+#, boost-format
 msgid "%1% repository"
 msgid_plural "%1% repositories"
 msgstr[0] "Αποθετήριο"
@@ -6005,7 +6233,7 @@ msgid "Ignoring disabled repository '%s'"
 msgstr "Παράβλεψη απενεργοποιημένου αποθετηρίου '%s'"
 
 #: src/repos.cc:779
-#, fuzzy, c-format, boost-format
+#, boost-format, c-format
 msgid "Global option '%s' can be used to temporarily enable repositories."
 msgstr ""
 "Χρησιμοποιήστε τις εντολές '%s' ή '%s' για να προσθέσετε ή να ενεργοποιήσετε "
@@ -6549,7 +6777,6 @@ msgid ""
 msgstr ""
 
 #: src/solve-commit.cc:636
-#, fuzzy
 msgid "Skip check:"
 msgstr "Έλεγχος GPG"
 
@@ -6758,7 +6985,7 @@ msgstr[1] ""
 
 #. translator: stats summary
 #: src/update.cc:350
-#, fuzzy, c-format, boost-format
+#, boost-format, c-format
 msgid "%d patch locked"
 msgid_plural "%d patches locked"
 msgstr[0] "%d διόρθωση χρειάζεται"
@@ -6766,7 +6993,7 @@ msgstr[1] "%d διορθώσεις χρειάζονται"
 
 #. translator: stats summary
 #: src/update.cc:358
-#, fuzzy, c-format, boost-format
+#, boost-format, c-format
 msgid "%d patch optional"
 msgid_plural "%d patches optional"
 msgstr[0] "%d διόρθωση χρειάζεται"
@@ -6821,7 +7048,6 @@ msgstr ""
 
 #. translator: Table headline; 'Needed' refers to patches with status 'needed'
 #: src/update.cc:592
-#, fuzzy
 msgid "Needed software management updates will be installed first:"
 msgstr ""
 "Οι ακόλουθες ενημερώσεις διαχείρισης λογισμικού θα εγκατασταθούν πρώτες:"
@@ -6934,7 +7160,7 @@ msgid "The flag %1% is not compatible with argument %2% (%3%)."
 msgstr ""
 
 #: src/utils/flags/exceptions.cc:34
-#, fuzzy, boost-format
+#, boost-format
 msgid "The flag %1% requires a argument."
 msgstr "Το όνομα πηγαίου πακέτου είναι απαιτούμενη παράμετρος."
 
@@ -7103,7 +7329,7 @@ msgstr ""
 "πακέτων. Συνίσταται να εκτελέσετε '%s' μετά το πέρας της λειτουργίας."
 
 #: src/utils/messages.cc:111
-#, fuzzy, boost-format
+#, boost-format
 msgid ""
 "Legacy commandline option %1% detected. Please use global option %2% instead."
 msgstr ""
@@ -7111,14 +7337,14 @@ msgstr ""
 "χρησιμοποιήστε την καθολική επιλογή %2% αντ'αυτού."
 
 #: src/utils/messages.cc:112
-#, fuzzy, boost-format
+#, boost-format
 msgid "Legacy commandline option %1% detected. Please use %2% instead."
 msgstr ""
 "Η επιλογή %1% γραμμή εντολών παλαιού τύπου ανιχνεύθηκε. Παρακαλώ "
 "χρησιμοποιήστε %2% αντ'αυτού."
 
 #: src/utils/messages.cc:118
-#, fuzzy, boost-format
+#, boost-format
 msgid "Legacy commandline option %1% detected. This option is ignored."
 msgstr ""
 "Η επιλογή %1% γραμμή εντολών παλαιού τύπου ανιχνεύθηκε. Παρακαλώ "
@@ -7230,7 +7456,6 @@ msgstr "δε χρειάζεται"
 
 #. translator: patch status
 #: src/utils/misc.cc:119
-#, fuzzy
 msgid "undetermined"
 msgstr "μη ορισμένο"
 
