@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: @PACKAGE@\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-23 11:16+0100\n"
-"PO-Revision-Date: 2026-02-23 16:04+0000\n"
+"PO-Revision-Date: 2026-02-23 19:04+0000\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <https://l10n.opensuse.org/projects/zypper/master/"
 "sl/>\n"
@@ -5888,7 +5888,7 @@ msgstr "Predlagani"
 #. translators: A pattern has a 1:1 relation to a .rpm package defining it's properties AKA the pattern's Buddy.
 #: src/info.cc:697
 msgid "Buddy Package"
-msgstr ""
+msgstr "Povezani paket"
 
 #. translators: property name; short; used like "Name: value"
 #: src/info.cc:701
