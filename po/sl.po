@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: @PACKAGE@\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-23 11:16+0100\n"
-"PO-Revision-Date: 2025-07-22 12:48+0000\n"
-"Last-Translator: Julia Faltenbacher <julia.faltenbacher@suse.com>\n"
+"PO-Revision-Date: 2026-02-23 16:04+0000\n"
+"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <https://l10n.opensuse.org/projects/zypper/master/"
 "sl/>\n"
 "Language: sl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.16\n"
 
 #: src/Command.cc:93
 msgid "Invalid command"
@@ -4798,15 +4798,15 @@ msgstr "Storitev »%s« je bila odstranjena."
 
 #: src/commands/services/list.cc:94
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/commands/services/list.cc:95
 msgid "Config"
-msgstr ""
+msgstr "Nastavitve"
 
 #: src/commands/services/list.cc:137
 msgid "services (ls) [OPTIONS] [SERVICE] ..."
-msgstr ""
+msgstr "services (ls) [MOŽNOSTI] [STORITEV] …"
 
 #: src/commands/services/list.cc:138
 msgid "List all defined services."
