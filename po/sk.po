@@ -6,16 +6,16 @@ msgstr ""
 "Project-Id-Version: zypper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-23 11:16+0100\n"
-"PO-Revision-Date: 2025-07-22 12:48+0000\n"
-"Last-Translator: Julia Faltenbacher <julia.faltenbacher@suse.com>\n"
-"Language-Team: Slovak <https://l10n.opensuse.org/projects/zypper/master/sk/"
-">\n"
+"PO-Revision-Date: 2026-02-23 19:04+0000\n"
+"Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
+"Language-Team: Slovak <https://l10n.opensuse.org/projects/zypper/master/sk/>"
+"\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.16\n"
 
 #: src/Command.cc:93
 msgid "Invalid command"
@@ -4668,15 +4668,15 @@ msgstr "Služba '%s' bola odstránená."
 
 #: src/commands/services/list.cc:94
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/commands/services/list.cc:95
 msgid "Config"
-msgstr ""
+msgstr "Konfigurácia"
 
 #: src/commands/services/list.cc:137
 msgid "services (ls) [OPTIONS] [SERVICE] ..."
-msgstr ""
+msgstr "services (ls) [VOĽBY] [SLUŽBA] ..."
 
 #: src/commands/services/list.cc:138
 msgid "List all defined services."
@@ -5758,7 +5758,7 @@ msgstr "Navrhovaný"
 #. translators: A pattern has a 1:1 relation to a .rpm package defining it's properties AKA the pattern's Buddy.
 #: src/info.cc:697
 msgid "Buddy Package"
-msgstr ""
+msgstr "Kamarátsky balík"
 
 #. translators: property name; short; used like "Name: value"
 #: src/info.cc:701
