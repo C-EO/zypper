@@ -296,7 +296,7 @@ std::vector<ZyppFlags::CommandGroup> Config::cliOptions()
               setOutVerbosity( verbosity );
             })),
             // translators: --verbose, -v
-            _("Increase verbosity.")
+            text::join( _("Increase verbosity."), _("For debugging output specify this option twice. 'zypper -vv ref' for example will show the mirrors used to download the metadata.") )
         ).setPriority( Priority::OUTPUT + 1 )),
         // rug compatibility alias for -vv
         std::move( ZyppFlags::CommandOption(

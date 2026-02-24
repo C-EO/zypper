@@ -56,7 +56,9 @@ RefreshRepoCmd::RefreshRepoCmd(std::vector<std::string> &&commandAliases_r )
       // translators: command summary: refresh, ref
       _("Refresh all repositories."),
       // translators: command description
-      _("Refresh repositories specified by their alias, number or URI. If none are specified, all enabled repositories will be refreshed."),
+      std::string(_("Refresh repositories specified by their alias, number or URI. If none are specified, all enabled repositories will be refreshed.")) + "\n\n" +
+      _("HINT: 'zypper -vv ref' will show the mirrors used to download the metadata.")
+      ,
       ResetRepoManager
   )
 {

@@ -87,6 +87,7 @@ The repository metadata are checked for changes before actually doing the refres
 
 To delay the up-to-date check (and thus the automatic refresh) for a certain number of minutes, edit the value of the *repo.refresh.delay* attribute of ZYpp config file (*/etc/zypp/zypp.conf*). This means, zypper will not even try to download and check the index files, and you will be able to use zypper for operations like search or info without internet access or root privileges.
 
+HINT: *zypper -vv ref* will show the mirrors used to download the metadata.
 
 Services
 ~~~~~~~~
@@ -1811,7 +1812,7 @@ NOTE: Use and location of the system-wide */etc/zypp/zypp.conf* can not be chang
 See also *FILES* section for more information.
 
 *-v*, *--verbose*::
-	Increase verbosity. For debugging output specify this option twice.
+	Increase verbosity. For debugging output specify this option twice. *zypper -vv ref* for example will show the mirrors used to download the metadata.
 
 *-q*, *--quiet*::
 	Suppress normal output. Brief (esp. result notification) messages and error messages will still be printed, though. If used together with conflicting *--verbose* option, the *--verbose* option takes preference.
