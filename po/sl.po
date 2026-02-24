@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: @PACKAGE@\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 18:09+0100\n"
-"PO-Revision-Date: 2026-02-23 19:04+0000\n"
+"PO-Revision-Date: 2026-02-24 21:04+0000\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <https://l10n.opensuse.org/projects/zypper/master/"
 "sl/>\n"
@@ -185,6 +185,8 @@ msgid ""
 "For debugging output specify this option twice. 'zypper -vv ref' for example "
 "will show the mirrors used to download the metadata."
 msgstr ""
+"Za razhroščevalni izpis to možnost podajte dvakrat. »zypper -vv ref« na "
+"primer prikaže zrcalne strežnike, ki so uporabljeni za prejem metapodatkov."
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -4040,6 +4042,8 @@ msgstr ""
 msgid ""
 "HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
 msgstr ""
+"NAMIG: »zypper -vv ref« prikaže zrcalne strežnike, ki so uporabljeni za "
+"prejem metapodatkov."
 
 #. translators: -f, --force
 #: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
