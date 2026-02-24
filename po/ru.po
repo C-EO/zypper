@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zypper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2025-07-28 23:59+0000\n"
 "Last-Translator: Aleksey Fedorov <Aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://l10n.opensuse.org/projects/zypper/master/ru/"
@@ -175,6 +175,12 @@ msgstr "Подавить нормальный вывод, выводить то�
 #: src/Config.cc:299
 msgid "Increase verbosity."
 msgstr "Увеличить подробность вывода."
+
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -2517,8 +2523,8 @@ msgid ""
 "Remove packages with specified capabilities. A capability is NAME[.ARCH]"
 "[OP<VERSION>], where OP is one of <, <=, =, >=, >."
 msgstr ""
-"Удалить пакеты с указанными возможностями. Возможность — это "
-"ИМЯ[.АРХИТЕКТУРА][ОП<ВЕРСИЯ>], где ОП — один из операторов <, <=, =, >=, >."
+"Удалить пакеты с указанными возможностями. Возможность — это ИМЯ[."
+"АРХИТЕКТУРА][ОП<ВЕРСИЯ>], где ОП — один из операторов <, <=, =, >=, >."
 
 #: src/commands/installremove.cc:104 src/commands/installremove.cc:234
 #: src/utils/messages.cc:53
@@ -3938,33 +3944,38 @@ msgstr ""
 "Обновить репозитории, указанные псевдонимом, номером или URI-адресом. Если "
 "не указано ни одного, все включенные репозитории будут обновлены."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "Выполнить принудительное полное обновление."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Принудительно перестроить базу данных."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Принудительно выполнить загрузку необработанных метаданных."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Только построить базу данных, не загружать метаданные."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr "Только загрузить необработанные метаданные, не строить базу данных."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
@@ -3973,82 +3984,82 @@ msgstr ""
 "всех предлагаемых архитектур, даже если репозиторий поддерживает фильтрацию."
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Обновить только указанные репозитории."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Обновить сервисы перед обновлением репозиториев."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "Общий параметр \"%s\" здесь не действует."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "При использовании \"%s\" аргументы не разрешены."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Указанные репозитории: "
 
-#: src/commands/repos/refresh.cc:262
+#: src/commands/repos/refresh.cc:264
 #, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "Обновление репозитория \"%s\"."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Сканирование содержимого отключенного репозитория \"%s\"."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Пропуск отключенного репозитория \"%s\""
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "Репозиторий \"%s\" пропускается из-за указанной выше ошибки."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr "Некоторые репозитории не были обновлены, поскольку не были известны."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "Указанные репозитории не включены или не определены."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Не определено ни одного включенного репозитория."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr ""
 "Используйте команду \"%s\" или \"%s\", чтобы добавить или включить "
 "репозитории."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr "Не удалось обновить репозитории из-за ошибок."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr "Некоторые репозитории не обновлены из-за ошибки."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "Указанные репозитории обновлены."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Все репозитории обновлены."
 
@@ -6245,8 +6256,8 @@ msgid ""
 msgstr ""
 "Это может быть вызвано недопустимыми метаданными в репозитории или ошибкой в "
 "анализаторе метаданных. В последнем случае (или если возникают сомнения) "
-"отправьте отчёт об ошибке, выполнив указания на странице http://"
-"en.opensuse.org/Zypper/Troubleshooting"
+"отправьте отчёт об ошибке, выполнив указания на странице http://en.opensuse."
+"org/Zypper/Troubleshooting"
 
 #: src/repos.cc:446
 #, c-format, boost-format
@@ -6598,10 +6609,10 @@ msgid ""
 "not solve the issue, it could be that you are using a broken mirror or the "
 "server has actually discontinued to support the repository."
 msgstr ""
-"Метаданные репозитория устарели: Проверьте, что включено «автообновление» "
-"(zypper lr), либо обновите репозиторий вручную (zypper ref). Если это не "
-"решит проблему, то вы, возможно, используете сломанное зеркало или сервер "
-"прекратил поддержку репозитория."
+"Метаданные репозитория устарели: Проверьте, что включено "
+"«автообновление» (zypper lr), либо обновите репозиторий вручную (zypper "
+"ref). Если это не решит проблему, то вы, возможно, используете сломанное "
+"зеркало или сервер прекратил поддержку репозитория."
 
 #: src/repos.cc:1849
 msgid "Reading installed packages..."
@@ -6806,8 +6817,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 "Проверка запущенных процессов, использующих удаленные библиотеки, отключена "
 "в zypper.conf. Для ручной проверки запустите \"%s\"."
@@ -7921,8 +7932,8 @@ msgstr "Ошибка"
 #~ "Следующие %1% пакета были исключены из проверки на конфликты файлов, т.к. "
 #~ "загрузка ещё не завершена:"
 #~ msgstr[2] ""
-#~ "Следующие %1% пакетов были исключены из проверки на конфликты файлов, "
-#~ "т.к. загрузка ещё не завершена:"
+#~ "Следующие %1% пакетов были исключены из проверки на конфликты файлов, т."
+#~ "к. загрузка ещё не завершена:"
 
 #~ msgid "s/r/c"
 #~ msgstr "s/r/c"

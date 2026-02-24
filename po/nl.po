@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zypper.nl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2026-02-24 12:04+0000\n"
 "Last-Translator: Freek de Kruijf <freek@opensuse.org>\n"
 "Language-Team: Dutch <https://l10n.opensuse.org/projects/zypper/master/nl/>\n"
@@ -170,6 +170,12 @@ msgstr "Onderdruk de normale uitvoer en toon alleen foutmeldingen."
 #: src/Config.cc:299
 msgid "Increase verbosity."
 msgstr "Toon meer uitvoer."
+
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -3906,33 +3912,38 @@ msgstr ""
 "Vernieuw bronnen gespecificeerd door diens alias, nummer of URI. Als er geen "
 "is gespecificeerd zullen alle geactiveerde opslagruimtes worden ververst."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "forceer een complete verversing."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Opnieuw bouwen van de database afdwingen."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Downloaden van ruwe metagegevens afdwingen."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Alleen de database bouwen, geen metagegevens downloaden."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr "Alleen ruwe metagegevens downloaden, de database niet bouwen."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
@@ -3941,83 +3952,83 @@ msgstr ""
 "architecturen zelfs als de opslagruimte filteren ondersteunt."
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Alleen gespecificeerde opslagruimtes vernieuwen."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Ook services vernieuwen alvorens de opslagruimtes te vernieuwen."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "De algemene optie '%s' heeft hier geen effect."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "Argumenten zijn niet toegestaan als '%s' wordt gebruikt."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Gekozen installatiebronnen: "
 
-#: src/commands/repos/refresh.cc:262
+#: src/commands/repos/refresh.cc:264
 #, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "Bezig met vernieuwen van ‘%s’."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Bezig met doorzoeken van inhoud van uitgeschakelde opslagruimte ‘%s’."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Uitgeschakelde opslagruimte ‘%s’ wordt overgeslagen"
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "‘%s’ wordt wegens bovenstaande foutmelding overgeslagen."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr ""
 "Enkele installatiebronnen zijn niet vernieuwd omdat ze niet bekend zijn."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "De gekozen installatiebronnen zijn niet ingeschakeld of gekozen."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Er zijn geen ingeschakelde installatiebronnen gekozen."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr ""
 "Gebruik ‘%s’ of ‘%s’ om installatiebronnen toe te voegen in te schakelen."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr ""
 "De installatiebronnen kunnen wegens foutmeldingen niet worden vernieuwd."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr "Enkele installatiebronnen zijn wegens foutmeldingen niet vernieuwd."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "De opgegeven installatiebronnen zijn vernieuwd."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Alle installatiebronnen zijn vernieuwd."
 
@@ -6239,8 +6250,8 @@ msgid ""
 msgstr ""
 "Dit kan worden veroorzaakt door ongeldige metagegevens in de opslagruimte of "
 "door een fout in de parser van de metagegevens. In het laatste geval of als "
-"u twijfelt, geeft u de fout door aan de hand van de instructies op http://"
-"nl.opensuse.org/Zypper/Troubleshooting"
+"u twijfelt, geeft u de fout door aan de hand van de instructies op http://nl."
+"opensuse.org/Zypper/Troubleshooting"
 
 #: src/repos.cc:446
 #, c-format, boost-format
@@ -6808,8 +6819,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 "Controle op actieve processen die verwijderde bibliotheken gebruiken is in "
 "zypper.conf uitgeschakeld. Voer '%s' handmatig uit voor controle."

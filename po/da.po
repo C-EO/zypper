@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zypper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2026-02-09 17:04+0000\n"
 "Last-Translator: Peter Andreasen <noesgaard@gmail.com>\n"
 "Language-Team: Danish <https://l10n.opensuse.org/projects/zypper/master/da/"
@@ -163,6 +163,12 @@ msgstr "Undertryk normal output, udskriv kun fejlmeddelelser."
 #: src/Config.cc:299
 msgid "Increase verbosity."
 msgstr "Vær mere uddybende."
+
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -2347,8 +2353,8 @@ msgid ""
 "added e.g. new hardware or driver repos."
 msgstr ""
 "Kaldt som '%1%', begrænser det kommandoen til kun at lede efter pakker som "
-"understøtter tilgængelig hardware, sprog eller filsystemer. Nyttig efter "
-"f.eks. at have tilføjet ny hardware- eller driver-softwarekilder."
+"understøtter tilgængelig hardware, sprog eller filsystemer. Nyttig efter f."
+"eks. at have tilføjet ny hardware- eller driver-softwarekilder."
 
 #. translators: command description
 #: src/commands/inrverify.cc:101
@@ -3559,8 +3565,8 @@ msgstr "Kan ikke bruge %s sammen med %s. Bruger indstillingen %s."
 msgid ""
 "If only one argument is used, it must be a URI pointing to a .repo file."
 msgstr ""
-"Hvis der kun anvendes ét argument, skal det være en URI, der peger på "
-"en .repo-fil."
+"Hvis der kun anvendes ét argument, skal det være en URI, der peger på en ."
+"repo-fil."
 
 #: src/commands/repos/add.cc:130
 msgid "Specified type is not a valid repository type:"
@@ -3782,116 +3788,121 @@ msgstr ""
 "Genopfrisk softwarekilder angivet ved alias, nummer eller URI. Hvis ingen "
 "angives, bliver alle aktive softwarekilder genopfrisket."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "Gennemtving komplet genopfriskning."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Gennemtving genopbygning af databasen."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Gennemtving download af rå metadata."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Byg kun databasen, download ikke metadata."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr "Download kun rå metadata, byg ikke databasen."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
 msgstr ""
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Genopfrisk kun angivne softwarekilder."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Genopfrisk også tjenester før genopfriskning af softwarekilder."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "Det globale tilvalg \"%s\" har ingen virkning her."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "Argumenter tillades ikke, hvis '%s' anvendes."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Angivne softwarekilder: "
 
-#: src/commands/repos/refresh.cc:262
+#: src/commands/repos/refresh.cc:264
 #, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "Genopfrisker softwarekilden '%s'."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Scanner indhold af deaktiveret softwarekilde \"%s\"."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Springer den deaktiverede softwarekilde '%s' over"
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "Springer softwarekilden '%s' over pga. den ovennævnte fejl."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr ""
 "Nogle af softwarekilderne blev ikke genopfrisket pga. at de ikke var kendt."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "Angivne softwarekilder er ikke aktiverede eller definerede."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Der er ingen aktiverede softwarekilder angivet."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr ""
 "Brug kommandoerne '%s' eller '%s' for at tilføje eller aktivere "
 "softwarekilder."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr "Kunne ikke genopfriske softwarekilderne pga. fejl."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr "Nogle af softwarekilderne blev ikke genopfrisket pga. en fejl."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "Angivne softwarekilder blev genopfrisket."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Alle softwarekilder blev genopfrisket."
 
@@ -6043,8 +6054,8 @@ msgid ""
 msgstr ""
 "Dette kan skyldes ugyldig metadata i softwarekilden eller en fejl i metadata-"
 "fortolkeren. I det sidste tilfælde - eller i tvivlstilfælde - opret da "
-"venligst en fejlrapport ved at følge instruktionerne på http://"
-"en.opensuse.org/Zypper/Troubleshooting"
+"venligst en fejlrapport ved at følge instruktionerne på http://en.opensuse."
+"org/Zypper/Troubleshooting"
 
 #: src/repos.cc:446
 #, c-format, boost-format
@@ -6592,8 +6603,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 "Søgning efter kørende processer ved brug af slettede biblioteker er "
 "deaktiveret i zypper.conf. Kør '%s' for at søge manualt."
@@ -10312,8 +10323,8 @@ msgstr "Fejl"
 #~ "søges i\n"
 #~ "                           søges i pakkenavn som standard.\n"
 #~ "-f, --file-list            Søg efter et match i pakkers filliste.\n"
-#~ "-d, --search-descriptions  Søg også i pakkeopsummeringer og "
-#~ "-beskrivelser.\n"
+#~ "-d, --search-descriptions  Søg også i pakkeopsummeringer og -"
+#~ "beskrivelser.\n"
 #~ "-C, --case-sensitive       Udfør versalfølsom søgning.\n"
 #~ "-i, --installed-only       Vis kun pakker, der allerede er installeret.\n"
 #~ "-u, --not-installed-only   Vis kun pakker, der aktuelt ikke er "

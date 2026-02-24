@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zypper.el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2026-02-24 02:04+0000\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@yandex.com>\n"
 "Language-Team: Greek <https://l10n.opensuse.org/projects/zypper/master/el/>\n"
@@ -179,6 +179,12 @@ msgstr ""
 msgid "Increase verbosity."
 msgstr "Αύξηση ανάλυσης."
 
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: --color / --no-color
 #: src/Config.cc:320
 msgid "Whether to use colors in output if tty supports it."
@@ -239,8 +245,8 @@ msgstr "Αγνόηση άγνωστων πακέτων."
 msgid ""
 "Terse output for machine consumption. Implies --no-abbrev and --no-color."
 msgstr ""
-"Συνοπτική έξοδο για ανάγνωση από μηχανήματα. Συνεπάγεται τα --no-abbrev "
-"και --no-color."
+"Συνοπτική έξοδο για ανάγνωση από μηχανήματα. Συνεπάγεται τα --no-abbrev και "
+"--no-color."
 
 #. translators: --reposd-dir, -D <DIR>
 #: src/Config.cc:397
@@ -1118,7 +1124,7 @@ msgstr[0] "Η ακόλουθη εφαρμογή θα αλλάξει προμηθ
 msgstr[1] "Οι ακόλουθες εφαρμογές %d θα αλλάξουν προμηθευτή:"
 
 #: src/Summary.cc:1364
-#, boost-format, c-format
+#, c-format, boost-format
 msgid "The following package has no support information from its vendor:"
 msgid_plural ""
 "The following %d packages have no support information from their vendor:"
@@ -1785,7 +1791,8 @@ msgstr ""
 msgid "Received %1% new package signing key from repository \"%2%\":"
 msgid_plural "Received %1% new package signing keys from repository \"%2%\":"
 msgstr[0] "Λήφθηκε %1% νέο κλειδί υπογραφής πακέτων από το αποθετήριο \"%2%\":"
-msgstr[1] "Λήφθηκαν %1% νέα κλειδιά υπογραφής πακέτων από το αποθετήριο \"%2%\":"
+msgstr[1] ""
+"Λήφθηκαν %1% νέα κλειδιά υπογραφής πακέτων από το αποθετήριο \"%2%\":"
 
 #: src/callbacks/keyring.h:472
 msgid ""
@@ -2720,7 +2727,8 @@ msgstr "Αφαίρεση locales από τα αιτούμενα."
 
 #: src/commands/locale/removelocalecmd.cc:20
 msgid "Remove given locale(s) from the list of supported languages."
-msgstr "Αφαίρεση των δοθέντων locales από τη λίστα των υποστηριζόμενων γλωσσών."
+msgstr ""
+"Αφαίρεση των δοθέντων locales από τη λίστα των υποστηριζόμενων γλωσσών."
 
 #: src/commands/locale/removelocalecmd.cc:35
 #, c-format, boost-format
@@ -2753,8 +2761,8 @@ msgid ""
 "type option."
 msgstr ""
 "Η ΠΡΟΔΙΑΓΡΑΦΗ_ΚΛΕΙΔΩΜΑΤΟΣ αποτελείται από το '[ΤΥΠΟΣ:]ΟΝΟΜΑ[ OP ΕΚΔΟΣΗ]', "
-"όπου το ΟΝΟΜΑ μπορεί να είναι και μοτίβο glob με χαρακτήρες μπαλαντέρ * και "
-"?. Τύποι που δεν αφορούν πακέτα πρέπει να έχουν πρόθεμα τον ΤΥΠΟ: (π.χ. "
+"όπου το ΟΝΟΜΑ μπορεί να είναι και μοτίβο glob με χαρακτήρες μπαλαντέρ * "
+"και ?. Τύποι που δεν αφορούν πακέτα πρέπει να έχουν πρόθεμα τον ΤΥΠΟ: (π.χ. "
 "'patch:foo') ή να χρησιμοποιούν την επιλογή --type."
 
 #: src/commands/locks/add.cc:36
@@ -3017,15 +3025,15 @@ msgstr ""
 "$77777777777777777777777777777777777777777777777777..77...7.77.\n"
 "        ...$7777777777777777777777777777777777777777777777$77777.,7777$"
 "$.7$...\n"
-"        ."
-"$7777777777777777777777777777777777777777777777777I77777.7777$.~77$..\n"
+"        .$7777777777777777777777777777777777777777777777777I77777.7777$."
+"~77$..\n"
 "      ..7777777777777777777777777777777777777777777777777777..777$.....77777..\n"
 "     ..77777777777777777777777777777777777777777777777777777$. ..7777777777...\n"
 "     .777777777777777777777777777777777777777777777777777777777$...........7..\n"
-"   .."
-"$777777777+~I7$7777777777777777777777777777777777777777777777$77:+7$777..\n"
-"   .$77777$.         "
-".77777777777777777777777777777777777777777777777777$7..\n"
+"   ..$777777777+~I7$7777777777777777777777777777777777777777777777$77:"
+"+7$777..\n"
+"   ."
+"$77777$.         .77777777777777777777777777777777777777777777777777$7..\n"
 "   77777$.  ...777.. ...77777777777777777777777777777$$777$77$777777$I.\n"
 "  .7777$....777777777~....77777777$77....777777777777= .. ...  . .  ..\n"
 " ..77777  .777777777777....7777777...   ... ?77777777..\n"
@@ -3036,19 +3044,19 @@ msgstr ""
 "   .$77777........ .?7777      ...                   .$:\n"
 "     7777777.......$777$\n"
 "     .7$777777777777777.        ........  ....   . ..  ........  ..............\n"
-"     ...77777777777777..       777$7$$7.  77..   .$7...?7$7$777  .7$7$7$7$"
-"$.II.\n"
-"        ...77777777,...       $77777777. .77..   .77..77777777$  "
-".777777777....\n"
-"            .......           77....... ..77..   .77..77.....    "
-".77...... .\n"
+"     ...77777777777777..       777$7$$7.  77..   .$7...?7$7$777  .7$7$7$7$$."
+"II.\n"
+"        ...77777777,...       "
+"$77777777. .77..   .77..77777777$  .777777777....\n"
+"            .......           "
+"77....... ..77..   .77..77.....    .77...... .\n"
 ".7777..,7.77?...7777..7.?$$.  7$7$$$$7~...77..   .77..777$$$$7+...777$$$$?\n"
 "$....7.,7...7..7...,$ 7,...7...77777777$..77..   .77. .777777$77..7777777$\n"
 "7....7.,7   $..7777$7.$.  .7..       ,77..77.    .77.        .77 .77.\n"
-"$....$.,$...$..7......$.  "
-".7...,,,,,,77$..777::::777...,,,,,,77$..77:,,,,,,.\n"
-"I7777?.,$777$. 77777..7.  .7..$77777777.  .$77777$7...777777777  "
-".77777777$7\n"
+"$....$.,$...$..7......"
+"$.  .7...,,,,,,77$..777::::777...,,,,,,77$..77:,,,,,,.\n"
+"I7777?.,$777$. 77777..7.  .7..$77777777.  ."
+"$77777$7...777777777  .77777777$7\n"
 ".......,"
 "$...............  ..............  .....................  ...........\n"
 "      .,7\n"
@@ -3937,35 +3945,40 @@ msgstr ""
 "Ανανέωση καθορισμένων αποθετηρίων με βάση το ψευδώνυμο, αριθμό ή URI. Αν "
 "κανένα δεν είναι καθορισμένο, θα ανανεωθούν όλα τα ενεργοποιημένα αποθετήρια."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "Εξαναγκασμός πλήρης ανανέωσης."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Εξαναγκασμός επανακατασκευής βάσης δεδομένων."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Εξαναγκασμός λήψης ακατάργαστων μεταδεδομένων."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Να γίνει μόνο κατασκευή βάσης δεδομένων, όχι λήψη μεταδεδομένων."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr ""
 "Να γίνει μόνο λήψη των ακατέργαστων μεταδεδομένων, όχι κατασκευή της βάσης "
 "δεδομένων."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
@@ -3975,82 +3988,82 @@ msgstr ""
 "υποστηρίζει φιλτράρισμα."
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Ανανέωση μόνο καθορισμένων αποθετηρίων."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Ανανέωση επίσης υπηρεσιών πριν την ανανέωση αποθετηρίων."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "Η καθολική επιλογή '%s' δεν έχει αποτέλεσμα εδώ."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "Οι παράμετροι δεν επιτρέπονται εάν χρησιμοποιηθεί το '%s'."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Ορισμένα αποθετήρια: "
 
-#: src/commands/repos/refresh.cc:262
-#, boost-format, c-format
+#: src/commands/repos/refresh.cc:264
+#, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "Ανανέωση αποθετηρίου '%s'."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Σάρωση περιεχομένου του απενεργοποιημένου αποθετηρίου '%s'."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Παράβλεψη απενεργοποιημένου αποθετηρίου '%s'"
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "Παράβλεψη του αποθετηρίου '%s' λόγω του παραπάνω σφάλματος."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr "Ορισμένα από τα αποθετήρια δεν ανανεώθηκαν επειδή δεν ήταν γνωστά."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "Τα επιλεγμένα αποθετήρια δεν είναι ενεργοποιημένα ή ορισμένα."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Δεν έχουν οριστεί ενεργοποιημένα αποθετήρια."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr ""
 "Χρησιμοποιήστε τις εντολές '%s' ή '%s' για να προσθέσετε ή να ενεργοποιήσετε "
 "αποθετήρια."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr "Αδυναμία ανανέωσης αποθετηρίων λόγω σφαλμάτων."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr "Κάποια από τα αποθετήρια δεν ανανεώθηκαν λόγω ενός σφάλματος."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "Τα ορισμένα αποθετήρια έχουν ανανεωθεί."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Όλα τα αποθετήρια έχουν ανανεωθεί."
 
@@ -4268,8 +4281,8 @@ msgid ""
 "Use the global GPG check setting defined in /etc/zypp/zypp.conf. This is the "
 "default."
 msgstr ""
-"Χρήση της καθολικής ρύθμισης ελέγχου GPG που ορίζεται στο /etc/zypp/"
-"zypp.conf. Αυτή είναι η προεπιλογή."
+"Χρήση της καθολικής ρύθμισης ελέγχου GPG που ορίζεται στο /etc/zypp/zypp."
+"conf. Αυτή είναι η προεπιλογή."
 
 #. translators: -a, --alias
 #: src/commands/reposerviceoptionsets.cc:182
@@ -4676,7 +4689,8 @@ msgstr "Προσθήκη μιας υπηρεσίας ευρετηρίου απο
 
 #: src/commands/services/add.cc:153
 msgid "The type of service is always autodetected. This option is ignored."
-msgstr "Ο τύπος υπηρεσίας ανιχνεύεται πάντα αυτόματα. Αυτή η επιλογή αγνοείται."
+msgstr ""
+"Ο τύπος υπηρεσίας ανιχνεύεται πάντα αυτόματα. Αυτή η επιλογή αγνοείται."
 
 #: src/commands/services/common.cc:37
 msgid "Error reading services:"
@@ -6233,7 +6247,7 @@ msgid "Ignoring disabled repository '%s'"
 msgstr "Παράβλεψη απενεργοποιημένου αποθετηρίου '%s'"
 
 #: src/repos.cc:779
-#, boost-format, c-format
+#, c-format, boost-format
 msgid "Global option '%s' can be used to temporarily enable repositories."
 msgstr ""
 "Χρησιμοποιήστε τις εντολές '%s' ή '%s' για να προσθέσετε ή να ενεργοποιήσετε "
@@ -6772,8 +6786,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 
 #: src/solve-commit.cc:636
@@ -6985,7 +6999,7 @@ msgstr[1] ""
 
 #. translator: stats summary
 #: src/update.cc:350
-#, boost-format, c-format
+#, c-format, boost-format
 msgid "%d patch locked"
 msgid_plural "%d patches locked"
 msgstr[0] "%d διόρθωση χρειάζεται"
@@ -6993,7 +7007,7 @@ msgstr[1] "%d διορθώσεις χρειάζονται"
 
 #. translator: stats summary
 #: src/update.cc:358
-#, boost-format, c-format
+#, c-format, boost-format
 msgid "%d patch optional"
 msgid_plural "%d patches optional"
 msgstr[0] "%d διόρθωση χρειάζεται"
@@ -9475,8 +9489,8 @@ msgstr "Σφάλμα"
 #~ "(ακόμα και απομακρυσμένα).\n"
 #~ "\n"
 #~ "  Επιλογές εντολής:\n"
-#~ "-r, --repo <file.repo>  Άλλος ένας τρόπος να καθορίσετε κάποιο "
-#~ "αρχείο .repo για ανάγνωση.\n"
+#~ "-r, --repo <file.repo>  Άλλος ένας τρόπος να καθορίσετε κάποιο αρχείο ."
+#~ "repo για ανάγνωση.\n"
 #~ "-t, --type <type>       Τύπος αποθετηρίου (%s).\n"
 #~ "-d, --disable           Προσθήκη του αποθετηρίου ως ανενεργό.\n"
 #~ "-c, --check             Ανίχνευση URI.\n"

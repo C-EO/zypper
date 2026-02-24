@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zypper.uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2025-07-22 12:48+0000\n"
 "Last-Translator: Julia Faltenbacher <julia.faltenbacher@suse.com>\n"
 "Language-Team: Ukrainian <https://l10n.opensuse.org/projects/zypper/master/"
@@ -181,6 +181,12 @@ msgstr "Показувати тільки повідомлення про пом
 #: src/Config.cc:299
 msgid "Increase verbosity."
 msgstr "Вивід більш докладної інформації."
+
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -2495,8 +2501,8 @@ msgid ""
 "Remove packages with specified capabilities. A capability is NAME[.ARCH]"
 "[OP<VERSION>], where OP is one of <, <=, =, >=, >."
 msgstr ""
-"Вилучити пакунки з вказаною здатністю. Здатність - це запис у вигляді "
-"НАЗВА[.АРХ][ДІЯ<ВЕРСІЯ>], де ДІЯ є одним з знаків порівняння <, <=, =, >=, >."
+"Вилучити пакунки з вказаною здатністю. Здатність - це запис у вигляді НАЗВА[."
+"АРХ][ДІЯ<ВЕРСІЯ>], де ДІЯ є одним з знаків порівняння <, <=, =, >=, >."
 
 #: src/commands/installremove.cc:104 src/commands/installremove.cc:234
 #: src/utils/messages.cc:53
@@ -2790,8 +2796,8 @@ msgid ""
 msgstr ""
 "LOCKSPEC складається з '[ТИП:]ІМ'Я[ ОПЕРАТОР ВАРІАНТ]', де ІМ'Я може бути "
 "вказано як глобальний шаблон з використанням символів \"*\" та \"?\". Для "
-"типів, що не є пакунками можна вказати ТИП: рядок на початку (напр. "
-"'patch:foo') або використавши команду --type option."
+"типів, що не є пакунками можна вказати ТИП: рядок на початку (напр. 'patch:"
+"foo') або використавши команду --type option."
 
 #: src/commands/locks/add.cc:36
 msgid ""
@@ -3668,8 +3674,8 @@ msgstr "Неможливо використати %s разом з %s. Вико�
 msgid ""
 "If only one argument is used, it must be a URI pointing to a .repo file."
 msgstr ""
-"Якщо використано лише один аргумент, це має бути URI, що вказує на "
-"файл .repo."
+"Якщо використано лише один аргумент, це має бути URI, що вказує на файл ."
+"repo."
 
 #: src/commands/repos/add.cc:130
 msgid "Specified type is not a valid repository type:"
@@ -3890,114 +3896,119 @@ msgstr ""
 "Оновити дані про сховища, задані псевдонімами, номерами або адресами. Якщо "
 "нічого не вказано, буде оновлено всі сховища."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "Примусово завершити оновлення."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Примусова перебудова бази даних."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Примусове завантаження необроблених метаданих."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Тільки побудувати базу даних, не завантажувати метадані."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr "Тільки завантаження необроблених метаданих, не будувати базу даних."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
 msgstr ""
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Оновити дані лише для вказаних сховищ."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Оновити також сервіси перед оновленням сховищ."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "Глобальний параметр \"%s\" тут не працюватиме."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "Аргументи не дозволені, якщо використовується \"%s\"."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Вказані сховища: "
 
-#: src/commands/repos/refresh.cc:262
+#: src/commands/repos/refresh.cc:264
 #, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "Оновлення сховища \"%s\"."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Сканування вмісту вимкненого сховища \"%s\"."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Пропускається вимкнене сховище \"%s\""
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "Пропускається сховище \"%s\" через помилку вище."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr "Деякі сховища не було оновлено, так як не були відомі."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "Вказані сховища не увімкнено або не визначено."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Немає визначених увімкнених сховищ."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr ""
 "Для додавання або увімкнення сховищ використовуйте команди \"%s\" або \"%s\"."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr "Через помилки не вдалось оновити сховища."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr "Деякі сховища не було оновлено через помилку."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "Вказані сховища було оновлено."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Всі сховища було оновлено."
 
@@ -6170,8 +6181,8 @@ msgid ""
 msgstr ""
 "Це може трапитись через недійсні метадані в сховищі або через помилку в "
 "аналізаторі метаданих. В останньому випадку або, якщо ви непевні, будь "
-"ласка, надішліть звіт про помилку згідно до вказівок на сторінці http://"
-"en.opensuse.org/Zypper/Troubleshooting"
+"ласка, надішліть звіт про помилку згідно до вказівок на сторінці http://en."
+"opensuse.org/Zypper/Troubleshooting"
 
 #: src/repos.cc:446
 #, c-format, boost-format
@@ -6737,8 +6748,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 "Перевірка запущених процесів на використання видалених бібліотек вимкнена у "
 "zypper.conf. Запустіть \"%s\" для ручної перевірки."

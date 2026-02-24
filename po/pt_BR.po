@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zypper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2025-08-04 14:59+0000\n"
 "Last-Translator: Samanta Magalhaes <samanta_texttrans@outlook.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.opensuse.org/projects/"
@@ -172,6 +172,12 @@ msgstr "Ocultar a saída normal, imprimir apenas mensagens de erro."
 #: src/Config.cc:299
 msgid "Increase verbosity."
 msgstr "Aumenta a quantidade de detalhes."
+
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -2437,9 +2443,8 @@ msgid ""
 "Remove packages with specified capabilities. A capability is NAME[.ARCH]"
 "[OP<VERSION>], where OP is one of <, <=, =, >=, >."
 msgstr ""
-"Remove os pacotes com os recursos especificados. Um recurso é "
-"NOME[.ARQUITETURA][OP<VERSÃO>], em que OP é um dos operadores <, <=, =, >=, "
-">."
+"Remove os pacotes com os recursos especificados. Um recurso é NOME[."
+"ARQUITETURA][OP<VERSÃO>], em que OP é um dos operadores <, <=, =, >=, >."
 
 #: src/commands/installremove.cc:104 src/commands/installremove.cc:234
 #: src/utils/messages.cc:53
@@ -3864,33 +3869,38 @@ msgstr ""
 "Se nada for especificado, todos os repositórios habilitados serão "
 "atualizados."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "Forçar uma atualização completa."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Forçar a reconstrução do banco de dados."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Forçar o download dos metadados brutos."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Apenas construir o banco de dados, não baixar os metadados."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr "Apenas baixar os metadados brutos, não construir o banco de dados."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
@@ -3899,82 +3909,82 @@ msgstr ""
 "as arquiteturas, mesmo que o repositório suporte filtragem."
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Atualizar apenas os repositórios especificados."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Atualizar também os serviços antes de atualizar os repositórios."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "A opção global '%s' não tem efeito aqui."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "Argumentos não serão permitidos se '%s' for utilizado."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Repositórios especificados: "
 
-#: src/commands/repos/refresh.cc:262
+#: src/commands/repos/refresh.cc:264
 #, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "Atualizando o repositório '%s'."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Examinando o conteúdo do repositório desabilitado '%s'."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Ignorando o repositório desabilitado '%s'"
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "Ignorando o repositório '%s' devido ao erro acima."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr ""
 "Alguns dos repositórios não foram atualizados porque não eram conhecidos."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "Os repositórios especificados não estão habilitados ou definidos."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Não há repositórios habilitados definidos."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr ""
 "Use o comando '%s' ou '%s' para adicionar ou habilitar os repositórios."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr "Não foi possível atualizar os repositórios devido a erros."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr "Alguns dos repositórios não foram atualizados devido a um erro."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "Os repositórios especificados foram atualizados."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Todos os repositórios foram atualizados."
 
@@ -4188,8 +4198,8 @@ msgid ""
 "Use the global GPG check setting defined in /etc/zypp/zypp.conf. This is the "
 "default."
 msgstr ""
-"Usar as configurações de verificação GPG globais definidas no /etc/zypp/"
-"zypp.conf. Isto é o padrão."
+"Usar as configurações de verificação GPG globais definidas no /etc/zypp/zypp."
+"conf. Isto é o padrão."
 
 #. translators: -a, --alias
 #: src/commands/reposerviceoptionsets.cc:182
@@ -6151,8 +6161,8 @@ msgid ""
 msgstr ""
 "Isto pode ter sido causado por metadados inválidos no repositório ou por um "
 "bug no analisador de metadados. Neste último caso, ou em caso de dúvida, "
-"preencha um relatório de bug seguindo as instruções em http://"
-"en.opensuse.org/Zypper/Troubleshooting"
+"preencha um relatório de bug seguindo as instruções em http://en.opensuse."
+"org/Zypper/Troubleshooting"
 
 #: src/repos.cc:446
 #, c-format, boost-format
@@ -6706,8 +6716,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 "A verificação de processos em execução que usam bibliotecas removidas está "
 "desabilitada em zypper.conf. Execute '%s' para verificar manualmente."
@@ -7961,8 +7971,8 @@ msgstr "Erro"
 #~ "\t--no-refresh\t\tNão atualizar os repositórios.\n"
 #~ "\t--no-cd\t\t\tIgnorar os repositórios em CD/DVD.\n"
 #~ "\t--no-remote\t\tIgnorar os repositórios remotos.\n"
-#~ "\t--releasever\t\tDefinir o valor de $releasever em todos os "
-#~ "arquivos .repo (padrão: versão da distribuição)\n"
+#~ "\t--releasever\t\tDefinir o valor de $releasever em todos os arquivos ."
+#~ "repo (padrão: versão da distribuição)\n"
 
 #~ msgid ""
 #~ "     Target Options:\n"
@@ -8546,8 +8556,8 @@ msgstr "Erro"
 #~ "remoto).\n"
 #~ "\n"
 #~ "  Opções do comando:\n"
-#~ "-r, --repo <arquivo.repo>    Apenas outro modo de especificar um "
-#~ "arquivo .repo para leitura.\n"
+#~ "-r, --repo <arquivo.repo>    Apenas outro modo de especificar um arquivo ."
+#~ "repo para leitura.\n"
 #~ "-t, --type <tipo>         Tipo do repositório (%s).\n"
 #~ "-d, --disable             Adicionar o repositório como desabilitado.\n"
 #~ "-c, --check               Testar o URI.\n"
@@ -10158,8 +10168,8 @@ msgstr "Erro"
 #~ "remoto).\n"
 #~ "\n"
 #~ "  Opções do comando:\n"
-#~ "-r, --repo <arquivo.repo>    Apenas outro modo de especificar um "
-#~ "arquivo .repo para leitura.\n"
+#~ "-r, --repo <arquivo.repo>    Apenas outro modo de especificar um arquivo ."
+#~ "repo para leitura.\n"
 #~ "-t, --type <tipo>         Tipo do repositório (%s).\n"
 #~ "-d, --disable             Adicionar o repositório como desabilitado.\n"
 #~ "-c, --check               Testar o URI.\n"

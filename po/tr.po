@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: @PACKAGE@\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2026-02-23 16:04+0000\n"
 "Last-Translator: Akın Birdal <reend21@protonmail.com>\n"
-"Language-Team: Turkish <https://l10n.opensuse.org/projects/zypper/master/tr/>"
-"\n"
+"Language-Team: Turkish <https://l10n.opensuse.org/projects/zypper/master/tr/"
+">\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -168,6 +168,12 @@ msgstr "Normal çıktıyı gizleyin, yalnızca hata mesajlarını yazdırın."
 #: src/Config.cc:299
 msgid "Increase verbosity."
 msgstr "Ayrıntı seviyesini arttır."
+
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -2547,8 +2553,8 @@ msgid ""
 msgstr ""
 "Bağımlı paketleri kaldırmaktansa değiştirmeyi tercih eden bir kaldırma "
 "komutu. Aslında bu, düz argümanlarına (-) uygulanan kaldırma değiştiricisi "
-"ile tam özellikli bir yükleme komutudur. Yani 'removeptf foo', 'install -- "
-"-foo' ile aynıdır. Bu yüzden komut, yükleme komutuyla aynı seçenekleri kabul "
+"ile tam özellikli bir yükleme komutudur. Yani 'removeptf foo', 'install -- -"
+"foo' ile aynıdır. Bu yüzden komut, yükleme komutuyla aynı seçenekleri kabul "
 "eder. Bir PTF'yi (Program Geçici Düzeltmesi) kaldırmanın önerilen yoludur."
 
 #: src/commands/installremove.cc:317
@@ -3843,33 +3849,38 @@ msgstr ""
 "Takma adlarına, numaralarına veya URI'larına göre belirtilen depoları "
 "yenileyin. Hiçbiri belirtilmezse, tüm etkin havuzlar yenilenecektir."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "Tam bir yenilenmeye zorla."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Veritabanını yeniden oluşturmaya zorlayın."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Ham meta verileri indirmeye zorla."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Yalnızca veritabanını oluşturun, meta verileri indirmeyin."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr "Yalnızca ham meta verileri indirin, veritabanını oluşturmayın."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
@@ -3878,82 +3889,82 @@ msgstr ""
 "mimariler için ham meta verileri indirin."
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Sadece belirtilen depoları yenile."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Depoları yenilemeden önce hizmetleri de yenile."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "'%s' evrensel seçeneğinin burada etkisi yok."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "\"%s\" kullanılıyorsa bağımsız değişkenlere izin verilmez."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Belirtilen depolar: "
 
-#: src/commands/repos/refresh.cc:262
+#: src/commands/repos/refresh.cc:264
 #, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "'%s' deposu yenileniyor."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Devre dışı bırakılmış '%s' deposunun içeriği taranıyor."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Devre dışı olan '%s' deposu atlanıyor"
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "Üstteki hatadan dolayı '%s' deposu atlanıyor."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr "Bazı depolar bilinmedikleri için yenilenmedi."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "Belirtilen depolar etkin ya da tanımlı değil."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Etkinleştirilmiş tanımlı depo mevcut değil."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr ""
 "Depuyo etkinleştirmek yada depo eklemek için '%s' komutunu yada '%s' "
 "komutunu kullanın."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr "Hatadan dolayı depoyu yenileyemezsiniz."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr "Bazı depolar bir hatadan dolayı yenilenemedi."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "Belirtilen depolar yenilendi."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Tüm depolar yenilendi."
 
@@ -6712,8 +6723,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 "Silinen kitaplıkları kullanan çalışan işlemleri denetleme, zypper.conf "
 "içinde devre dışı bırakılmıştır. Manuel olarak kontrol etmek için '%s' "

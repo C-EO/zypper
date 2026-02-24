@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zypper.de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2025-08-01 14:59+0000\n"
 "Last-Translator: Gemineo <vistatec@gemineo.de>\n"
 "Language-Team: German <https://l10n.opensuse.org/projects/zypper/master/de/"
@@ -176,6 +176,12 @@ msgstr "Normale Ausgaben unterdrücken, nur Fehlermeldungen ausgeben."
 #: src/Config.cc:299
 msgid "Increase verbosity."
 msgstr "Ausführliche Ausgaben."
+
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -3690,8 +3696,8 @@ msgstr ""
 msgid ""
 "If only one argument is used, it must be a URI pointing to a .repo file."
 msgstr ""
-"Wenn nur ein Argument verwendet wird, dann muss es sich um einen auf "
-"eine .repo-Datei verweisenden URI handeln."
+"Wenn nur ein Argument verwendet wird, dann muss es sich um einen auf eine ."
+"repo-Datei verweisenden URI handeln."
 
 #: src/commands/repos/add.cc:130
 msgid "Specified type is not a valid repository type:"
@@ -3915,33 +3921,38 @@ msgstr ""
 "wurden. Wenn keine angegeben wurden, werden alle aktivierten Repositorys "
 "aktualisiert."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "Vollständige Aktualisierung erzwingen."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Neuerstellung der Datenbank erzwingen."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Herunterladen von Rohmetadaten erzwingen."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Nur die Datenbank erstellen, keine Metadaten herunterladen."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr "Nur Rohmetadaten herunterladen, nicht die Datenbank erstellen."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
@@ -3950,87 +3961,87 @@ msgstr ""
 "herunter, auch wenn das Repo Filtern unterstützt."
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Nur angegebene Repositorys aktualisieren."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Zunächst die Dienste, anschließend die Repositorys aktualisieren."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "Die globale Option '%s' hat hier keine Auswirkung."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "Bei Verwendung von '%s' sind keine Argumente zulässig."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Angegebene Repositorys: "
 
-#: src/commands/repos/refresh.cc:262
+#: src/commands/repos/refresh.cc:264
 #, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "Repository '%s' wird aktualisiert."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Inhalt des deaktivierten Repositorys '%s' wird durchsucht."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Deaktiviertes Repository '%s' wird übersprungen"
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "Repository '%s' wird aufgrund des obigen Fehlers übersprungen."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr ""
 "Einige der Repositorys konnten, weil sie nicht bekannt waren, nicht "
 "aktualisiert werden."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "Die angegebenen Repositorys wurden nicht aktiviert oder definiert."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Es wurden keine aktivierten Repositorys definiert."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr ""
 "Verwenden Sie die Kommandos '%s' oder '%s', um Repositorys hinzuzufügen oder "
 "zu aktivieren."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr ""
 "Die Repositorys konnten aufgrund von Fehlern nicht aktualisiert werden."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr ""
 "Einige der Repositorys konnten aufgrund eines Fehlers nicht aktualisiert "
 "werden."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "Die angegebenen Repositorys wurden aktualisiert."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Alle Repositorys wurden aktualisiert."
 
@@ -5446,9 +5457,9 @@ msgid ""
 "N), running, oldest(+N)."
 msgstr ""
 "Automatische Löschungen von installierten Kerneln gemäß der Liste an "
-"Kerneln, die von /etc/zypp/zypp.conf behalten werden sollen: "
-"multiversion.kernels, die als <Version>, aktuellster(-N), laufend, "
-"ältester(+N) gegeben sein können."
+"Kerneln, die von /etc/zypp/zypp.conf behalten werden sollen: multiversion."
+"kernels, die als <Version>, aktuellster(-N), laufend, ältester(+N) gegeben "
+"sein können."
 
 #: src/commands/utils/purge-kernels.cc:51
 msgid "Preparing to purge obsolete kernels..."
@@ -6846,8 +6857,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 "Die Suche nach laufenden Prozessen, die gelöschte Bibliotheken verwenden, "
 "ist in zypper.conf deaktiviert. Starten Sie die Suche manuell mit '%s'."
@@ -9658,8 +9669,8 @@ msgstr "Fehler"
 #~ "Standard.\n"
 #~ "-f, --file-list            Suche nach einem Treffer in der Dateiliste der "
 #~ "Pakete.\n"
-#~ "-d, --search-descriptions  Suche auch in Paketzusammenfassungen und "
-#~ "-beschreibungen.\n"
+#~ "-d, --search-descriptions  Suche auch in Paketzusammenfassungen und -"
+#~ "beschreibungen.\n"
 #~ "-C, --case-sensitive       Beachtung der Groß-/Kleinschreibung.\n"
 #~ "-i, --installed-only       Nur Pakete anzeigen, die schon installiert "
 #~ "sind.\n"
@@ -12057,8 +12068,8 @@ msgstr "Fehler"
 #~ "                           ist die Suche in Paketnamen der Standard.\n"
 #~ "-f, --file-list            Suche nach einer Übereinstimmung in der "
 #~ "Dateiliste der Pakete.\n"
-#~ "-d, --search-descriptions  Suche auch in Paketzusammenfassungen und "
-#~ "-beschreibungen.\n"
+#~ "-d, --search-descriptions  Suche auch in Paketzusammenfassungen und -"
+#~ "beschreibungen.\n"
 #~ "-C, --case-sensitive       Suche unter Beachtung der "
 #~ "Großkleinschreibung.\n"
 #~ "-i, --installed-only       Zeige nur schon installierte Pakete.\n"
@@ -12125,8 +12136,8 @@ msgstr "Fehler"
 #~ "    --match-words          Nach einer Übereinstimmung mit nur ganzen "
 #~ "Wörtern suchen.\n"
 #~ "    --match-exact          Nach einem genauen Paketnamen suchen.\n"
-#~ "-d, --search-descriptions  Auch in Paketzusammenfassungen und "
-#~ "-beschreibungen suchen.\n"
+#~ "-d, --search-descriptions  Auch in Paketzusammenfassungen und -"
+#~ "beschreibungen suchen.\n"
 #~ "-C, --case-sensitive       Eine Groß- und Kleinschreibung "
 #~ "berücksichtigende Suche durchführen.\n"
 #~ "-i, --installed-only       Nur installierte Pakete anzeigen.\n"

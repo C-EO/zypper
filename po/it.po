@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zypper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 11:16+0100\n"
+"POT-Creation-Date: 2026-02-24 18:09+0100\n"
 "PO-Revision-Date: 2025-08-01 17:59+0000\n"
 "Last-Translator: Davide Aiello <davide.aiello@novilingulists.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/zypper/master/it/"
@@ -171,6 +171,12 @@ msgstr "Sopprime l'output ordinario, stampa solo i messaggi di errore."
 #: src/Config.cc:299
 msgid "Increase verbosity."
 msgstr "Incrementa la verbosità."
+
+#: src/Config.cc:299
+msgid ""
+"For debugging output specify this option twice. 'zypper -vv ref' for example "
+"will show the mirrors used to download the metadata."
+msgstr ""
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -2785,8 +2791,8 @@ msgid ""
 msgstr ""
 "LOCKSPEC è formato da '[KIND:]NAME[ OP EDITION]', dove NAME può essere anche "
 "un criterio glob che utilizza i caratteri jolly * e ?. I tipi diversi dai "
-"pacchetti possono avere una propria stringa KIND: anteposta (ad es. "
-"'patch:foo') o utilizzare i comandi --type option."
+"pacchetti possono avere una propria stringa KIND: anteposta (ad es. 'patch:"
+"foo') o utilizzare i comandi --type option."
 
 #: src/commands/locks/add.cc:36
 msgid ""
@@ -3909,34 +3915,39 @@ msgstr ""
 "Aggiorna i repository specificati da alias, numero o URI. Se non è "
 "specificato alcun repository, tutti quelli abilitati verranno aggiornati."
 
+#: src/commands/repos/refresh.cc:60
+msgid ""
+"HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
+msgstr ""
+
 #. translators: -f, --force
-#: src/commands/repos/refresh.cc:80 src/commands/services/refresh.cc:46
+#: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
 msgid "Force a complete refresh."
 msgstr "Forza un aggiornamento completo."
 
 #. translators: -b, --force-build
-#: src/commands/repos/refresh.cc:85
+#: src/commands/repos/refresh.cc:87
 msgid "Force rebuild of the database."
 msgstr "Force la ricompilazione del database."
 
 #. translators: -d, --force-download
-#: src/commands/repos/refresh.cc:90
+#: src/commands/repos/refresh.cc:92
 msgid "Force download of raw metadata."
 msgstr "Forza il download dei metadati non elaborati."
 
 #. translators: -B, --build-only
-#: src/commands/repos/refresh.cc:95
+#: src/commands/repos/refresh.cc:97
 msgid "Only build the database, don't download metadata."
 msgstr "Crea il database senza effettuare il download dei metadati."
 
 #. translators: -D, --download-only
-#: src/commands/repos/refresh.cc:100
+#: src/commands/repos/refresh.cc:102
 msgid "Only download raw metadata, don't build the database."
 msgstr ""
 "Effettua il download dei metadati non elaborati senza creare il database."
 
 #. translators: --include-all-archs
-#: src/commands/repos/refresh.cc:105
+#: src/commands/repos/refresh.cc:107
 msgid ""
 "Multi-Arch repos: Download raw metadata for all offered architectures even "
 "if the repo supports filtering."
@@ -3945,80 +3956,80 @@ msgstr ""
 "architetture anche se il repository supporta i filtro."
 
 #. translators: -r, --repo <ALIAS|#|URI>
-#: src/commands/repos/refresh.cc:110
+#: src/commands/repos/refresh.cc:112
 msgid "Refresh only specified repositories."
 msgstr "Aggiorna solo gli archivi specificati."
 
 #. translators: -s, --services
-#: src/commands/repos/refresh.cc:116
+#: src/commands/repos/refresh.cc:118
 msgid "Refresh also services before refreshing repos."
 msgstr "Aggiorna anche i servizi prima di aggiornare i repository."
 
-#: src/commands/repos/refresh.cc:131
+#: src/commands/repos/refresh.cc:133
 #, c-format, boost-format
 msgid "The '%s' global option has no effect here."
 msgstr "L'opzione globale '%s' non ha effetto."
 
-#: src/commands/repos/refresh.cc:139
+#: src/commands/repos/refresh.cc:141
 #, c-format, boost-format
 msgid "Arguments are not allowed if '%s' is used."
 msgstr "Se viene usato '%s' non sono ammessi argomenti."
 
-#: src/commands/repos/refresh.cc:239 src/repos.cc:1011
+#: src/commands/repos/refresh.cc:241 src/repos.cc:1011
 msgid "Specified repositories: "
 msgstr "Repository specificati: "
 
-#: src/commands/repos/refresh.cc:262
+#: src/commands/repos/refresh.cc:264
 #, c-format, boost-format
 msgid "Refreshing repository '%s'."
 msgstr "Aggiornamento repository '%s'."
 
-#: src/commands/repos/refresh.cc:280 src/repos.cc:836
+#: src/commands/repos/refresh.cc:282 src/repos.cc:836
 #, c-format, boost-format
 msgid "Scanning content of disabled repository '%s'."
 msgstr "Scansione del contenuto del repository disabilitato '%s'."
 
-#: src/commands/repos/refresh.cc:291
+#: src/commands/repos/refresh.cc:293
 #, c-format, boost-format
 msgid "Skipping disabled repository '%s'"
 msgstr "Esclusione del repository disabilitato '%s'"
 
-#: src/commands/repos/refresh.cc:306 src/repos.cc:854 src/repos.cc:901
+#: src/commands/repos/refresh.cc:308 src/repos.cc:854 src/repos.cc:901
 #, c-format, boost-format
 msgid "Skipping repository '%s' because of the above error."
 msgstr "Esclusione del repository '%s' a causa dell'errore precedente."
 
-#: src/commands/repos/refresh.cc:318
+#: src/commands/repos/refresh.cc:320
 msgid ""
 "Some of the repositories have not been refreshed because they were not known."
 msgstr "Alcuni repository non sono stati aggiornati perché sconosciuti."
 
-#: src/commands/repos/refresh.cc:325
+#: src/commands/repos/refresh.cc:327
 msgid "Specified repositories are not enabled or defined."
 msgstr "I repository specificati non sono abilitati o definiti."
 
-#: src/commands/repos/refresh.cc:327
+#: src/commands/repos/refresh.cc:329
 msgid "There are no enabled repositories defined."
 msgstr "Non è stato definito alcun repository abilitato."
 
-#: src/commands/repos/refresh.cc:331
+#: src/commands/repos/refresh.cc:333
 #, c-format, boost-format
 msgid "Use '%s' or '%s' commands to add or enable repositories."
 msgstr "Usare i comandi '%s' o '%s' per aggiungere o abilitare i repository."
 
-#: src/commands/repos/refresh.cc:337
+#: src/commands/repos/refresh.cc:339
 msgid "Could not refresh the repositories because of errors."
 msgstr "Impossibile aggiornare i repository a causa di errori."
 
-#: src/commands/repos/refresh.cc:342 src/repos.cc:930
+#: src/commands/repos/refresh.cc:344 src/repos.cc:930
 msgid "Some of the repositories have not been refreshed because of an error."
 msgstr "Alcuni repository non sono stati aggiornati a causa di un errore."
 
-#: src/commands/repos/refresh.cc:346
+#: src/commands/repos/refresh.cc:348
 msgid "Specified repositories have been refreshed."
 msgstr "I repository specificati sono stati aggiornati."
 
-#: src/commands/repos/refresh.cc:348
+#: src/commands/repos/refresh.cc:350
 msgid "All repositories have been refreshed."
 msgstr "Tutti i repository sono stati aggiornati."
 
@@ -4232,8 +4243,8 @@ msgid ""
 "Use the global GPG check setting defined in /etc/zypp/zypp.conf. This is the "
 "default."
 msgstr ""
-"Usa la configurazione globale di verifica GPG definita in /etc/zypp/"
-"zypp.conf. Questa è l'impostazione predefinita."
+"Usa la configurazione globale di verifica GPG definita in /etc/zypp/zypp."
+"conf. Questa è l'impostazione predefinita."
 
 #. translators: -a, --alias
 #: src/commands/reposerviceoptionsets.cc:182
@@ -6811,8 +6822,8 @@ msgstr ""
 #: src/solve-commit.cc:620
 #, c-format, boost-format
 msgid ""
-"Check for running processes using deleted libraries is disabled in "
-"zypper.conf. Run '%s' to check manually."
+"Check for running processes using deleted libraries is disabled in zypper."
+"conf. Run '%s' to check manually."
 msgstr ""
 "Verifica di processi in esecuzione che utilizzano librerie eliminate "
 "disattivata in zypper.conf. Per verificare manualmente eseguire '%s'."
@@ -8687,8 +8698,8 @@ msgstr "Errore"
 #~ "suo URI o può essere letto dal file .repo specificato (anche remoto).\n"
 #~ "\n"
 #~ "  Opzioni comando:\n"
-#~ "-r, --repo <file.repo>    Solo un altro modo per specificare un "
-#~ "file .repo da leggere.\n"
+#~ "-r, --repo <file.repo>    Solo un altro modo per specificare un file ."
+#~ "repo da leggere.\n"
 #~ "-t, --type <type>         Tipo di archivio (%s).\n"
 #~ "-d, --disabilita             Aggiunge l'archivio come disabilitato.\n"
 #~ "-c, --check               Verifica URI.\n"
@@ -10302,8 +10313,8 @@ msgstr "Errore"
 #~ "suo URI o può essere letto dal file .repo specificato (anche remoto).\n"
 #~ "\n"
 #~ "  Opzioni comando:\n"
-#~ "-r, --repo <file.repo>    Solo un altro modo per specificare un "
-#~ "file .repo da leggere.\n"
+#~ "-r, --repo <file.repo>    Solo un altro modo per specificare un file ."
+#~ "repo da leggere.\n"
 #~ "-t, --type <type>         Tipo di archivio (%s).\n"
 #~ "-d, --disabilita             Aggiunge l'archivio come disabilitato.\n"
 #~ "-c, --check               Verifica URI.\n"
