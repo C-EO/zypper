@@ -11,10 +11,10 @@ msgstr ""
 "Project-Id-Version: zypper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 18:09+0100\n"
-"PO-Revision-Date: 2026-02-24 06:04+0000\n"
+"PO-Revision-Date: 2026-02-25 05:04+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/zypper/master/ja/"
-">\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/zypper/master/"
+"ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -169,6 +169,9 @@ msgid ""
 "For debugging output specify this option twice. 'zypper -vv ref' for example "
 "will show the mirrors used to download the metadata."
 msgstr ""
+"デバッグ出力を有効化したい場合は、このオプションを 2 回指定してください。たと"
+"えば 'zypper -vv ref' のように入力して実行すると、メタデータをダウンロードす"
+"る際に使用するミラーサイトを表示します。"
 
 #. translators: --color / --no-color
 #: src/Config.cc:320
@@ -3725,6 +3728,8 @@ msgstr ""
 msgid ""
 "HINT: 'zypper -vv ref' will show the mirrors used to download the metadata."
 msgstr ""
+"ヒント: 'zypper -vv ref' のように入力して実行すると、メタデータをダウンロード"
+"する際に使用するミラーサイトを表示します。"
 
 #. translators: -f, --force
 #: src/commands/repos/refresh.cc:82 src/commands/services/refresh.cc:46
